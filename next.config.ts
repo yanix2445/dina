@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  experimental: {
+    optimizePackageImports: ["@hugeicons/react", "lucide-react"],
+  },
 };
 
 export default nextConfig;
