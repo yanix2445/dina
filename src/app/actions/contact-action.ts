@@ -5,6 +5,8 @@ type ContactState = {
     error?: string;
 } | null;
 
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export async function sendContactEmail(
     _prevState: ContactState,
     formData: FormData
@@ -19,8 +21,7 @@ export async function sendContactEmail(
         return { success: false, error: "Veuillez remplir tous les champs." };
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!EMAIL_REGEX.test(email)) {
         return { success: false, error: "Veuillez entrer une adresse email valide." };
     }
 

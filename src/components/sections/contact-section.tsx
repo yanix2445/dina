@@ -173,9 +173,9 @@ export function ContactSection() {
                                     </label>
                                 </div>
 
-                                {state?.success === false && (
+                                {state?.success === false ? (
                                     <p className="text-xs font-medium text-red-500">{state.error}</p>
-                                )}
+                                ) : null}
 
                                 <button
                                     type="submit"
