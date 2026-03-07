@@ -36,8 +36,8 @@ const expertises: Expertise[] = [
 ];
 
 const certifications = [
-    { name: "TOEIC", date: "En cours", desc: "Anglais professionnel (Score visé : >750)" },
-    { name: "Certificat Voltaire", date: "Préparation", desc: "Excellence de l'orthographe en entreprise" },
+    { name: "TOEIC", date: "Obtenu", desc: "Anglais professionnel (Score : 700)" },
+    { name: "Score Message", date: "Validé", desc: "Aptitudes pour les études de gestion (Score : 198)" },
     { name: "Certification Pix", date: "Validé", desc: "Outils numériques (Traitements de données)" },
 ];
 
