@@ -13,7 +13,7 @@ const links = {
         { label: "LinkedIn", href: "https://www.linkedin.com/in/dina-riani-53a876333/" },
         { label: "Email", href: "mailto:dinariani258@gmail.com" },
         { label: "Téléphone", href: "tel:+33769053306" },
-        { label: "Curriculum Vitae", href: "/Cv dina.pdf" },
+        { label: "Curriculum Vitae", href: "/cv-dina-riani.pdf" },
     ]
 };
 

@@ -26,7 +26,7 @@ export function AboutSection() {
                             {/* Layer 3 — Photo, légèrement inset, rose visible autour */}
                             <div className="absolute inset-4 rounded-xl overflow-hidden shadow-md">
                                 <Image
-                                    src="/image-1-1.png"
+                                    src="/portrait-dina.png"
                                     alt="Dina RIANI — étudiante en BUT GEA, travaillant à Paris"
                                     fill
                                     className="object-cover object-center"
