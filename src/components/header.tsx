@@ -58,17 +58,17 @@ export function Header() {
                 </nav>
 
                 {/* CTA */}
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 sm:gap-3">
                     <a
                         href="/Cv dina.pdf"
                         target="_blank"
-                        className="hidden sm:inline-flex items-center gap-2 rounded-full border border-[#C9A84C]/50 px-5 py-2 text-[12px] font-semibold tracking-wide text-[#C9A84C] transition-all duration-300 hover:bg-[#C9A84C]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
+                        className="inline-flex items-center gap-2 rounded-full border border-[#C9A84C]/50 px-3 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-[12px] font-semibold tracking-wide text-[#C9A84C] transition-all duration-300 hover:bg-[#C9A84C]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
                     >
                         <span>Télécharger CV</span>
                     </a>
                     <a
                         href="#contact"
-                        className="rounded-full bg-[#C9A84C] px-5 py-2 text-[12px] font-semibold tracking-wide text-white shadow-sm transition-all duration-300 hover:bg-[#9E7B30] hover:shadow-md hover:shadow-[#C9A84C]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
+                        className="rounded-full bg-[#C9A84C] px-3 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-[12px] font-semibold tracking-wide text-white shadow-sm transition-all duration-300 hover:bg-[#9E7B30] hover:shadow-md hover:shadow-[#C9A84C]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
                     >
                         Me contacter
                     </a>

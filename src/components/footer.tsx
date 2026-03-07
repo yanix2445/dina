@@ -27,10 +27,10 @@ export function Footer() {
         <footer className="relative border-t border-[#1C1815] bg-[#1C1815] pt-20 pb-10">
             <div className="mx-auto max-w-6xl px-6 md:px-8">
                 {/* Section principale : 4 colonnes */}
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 mb-20">
+                <div className="grid grid-cols-2 gap-y-12 gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 mb-20">
 
                     {/* Colonne 1 : Marque & Bio */}
-                    <div className="flex flex-col items-start gap-6 lg:col-span-1">
+                    <div className="col-span-2 flex flex-col items-start gap-6 md:col-span-1">
                         <a href="#" onClick={scrollToTop} className="group flex items-center gap-3">
                             <span className="flex size-10 items-center justify-center rounded-full border border-[#C9A84C]/50 text-xs font-semibold tracking-wider text-[#C9A84C] transition-all group-hover:bg-[#C9A84C] group-hover:text-[#1C1815]">
                                 DR
@@ -39,13 +39,13 @@ export function Footer() {
                                 Dina Riani.
                             </span>
                         </a>
-                        <p className="text-sm leading-relaxed text-[#9A9088] max-w-xs">
+                        <p className="text-sm leading-relaxed text-[#9A9088] max-w-xs md:max-w-full">
                             Étudiante en BUT GEA. Spécialisation en contrôle de gestion, comptabilité et conseil financier.
                         </p>
                     </div>
 
                     {/* Colonne 2 : Navigation */}
-                    <div className="flex flex-col gap-6">
+                    <div className="col-span-1 flex flex-col gap-6">
                         <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A84C]">
                             Navigation
                         </h4>
@@ -64,7 +64,7 @@ export function Footer() {
                     </div>
 
                     {/* Colonne 3 : Contact & Réseaux */}
-                    <div className="flex flex-col gap-6">
+                    <div className="col-span-1 flex flex-col gap-6">
                         <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A84C]">
                             Contact
                         </h4>
@@ -84,7 +84,7 @@ export function Footer() {
                     </div>
 
                     {/* Colonne 4 : Informations */}
-                    <div className="flex flex-col gap-6">
+                    <div className="col-span-2 flex flex-col gap-6 md:col-span-1">
                         <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A84C]">
                             Informations
                         </h4>
@@ -113,7 +113,7 @@ export function Footer() {
 
                 {/* Section bas de page : Copyright et retour en haut */}
                 <div className="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row">
-                    <div className="flex flex-col items-center gap-2 sm:items-start">
+                    <div className="flex flex-col items-center gap-2 sm:items-start text-center sm:text-left">
                         <p className="text-xs font-medium text-[#9A9088]">
                             &copy; {new Date().getFullYear()} Dina RIANI. Tous droits réservés.
                         </p>
@@ -125,7 +125,7 @@ export function Footer() {
                     <a
                         href="#"
                         onClick={scrollToTop}
-                        className="group flex size-10 items-center justify-center rounded-full bg-[#FEFCF8]/5 border border-[#FEFCF8]/10 transition-all hover:bg-[#C9A84C] hover:border-[#C9A84C]"
+                        className="hidden sm:flex group size-10 items-center justify-center rounded-full bg-[#FEFCF8]/5 border border-[#FEFCF8]/10 transition-all hover:bg-[#C9A84C] hover:border-[#C9A84C]"
                         aria-label="Retour en haut"
                     >
                         <svg
