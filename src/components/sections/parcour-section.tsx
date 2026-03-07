@@ -1,177 +1,208 @@
-/* Double-rail timeline : deux lignes verticales (or = Pro | rose = Personnel)
-   Les expériences s'accrochent de chaque côté, interleaved chronologiquement.
-   Chaque entrée est connectée à son rail par un bras horizontal. */
+"use client";
 
-type Entry = {
+type Experience = {
     title: string;
     company: string;
     period: string;
+    type: "Pro" | "Personnel";
     description: string;
-    side: "left" | "right"; // left = Pro (or), right = Personnel (rose)
 };
 
-/* Ordre chronologique — interleaving naturel */
-const entries: Entry[] = [
+const experiences: Experience[] = [
     {
-        side: "right",
-        title: "Bénévole Événementiel",
-        company: "Association locale",
-        period: "2023 – 2024",
+        type: "Pro",
+        period: "Mars – Juin 2025",
+        title: "Stage en Contrôle de Gestion",
+        company: "Ruby Rose Beauty France",
         description:
-            "Coordination logistique d'événements caritatifs, gestion des inscriptions et liaison avec les partenaires.",
+            "• Mise en place d'une comptabilité analytique (centres de coûts, clés de répartition)\n• Calcul du coût de revient des formules cosmétiques (RCA)\n• Gestion de la facturation, saisies et rapprochements (Tiime)\n• Coordination avec l'usine en Turquie et le marketing au Brésil\n• Collecte et structuration des données techniques R&D\n• Veille sur les prix de transfert et relations intra-groupe\n• Collaboration interservices (formulation, finance, marketing)\n• Contribution à la structuration des process internes",
     },
     {
-        side: "left",
-        title: "Assistante Administrative",
-        company: "Mairie locale",
-        period: "Juin – Août 2024",
+        type: "Personnel",
+        period: "2024 – 2025",
+        title: "Trésorière de Projet Universitaire",
+        company: "Alumni GEA Meaux",
         description:
-            "Accueil du public, gestion du courrier, archivage documentaire et outils bureautiques.",
+            "• Élaboration et suivi du budget prévisionnel du projet\n• Analyse des flux financiers et optimisation des ressources\n• Contrôle des encaissements et des dépenses\n• Reporting financier et gestion des outils Excel",
     },
     {
-        side: "right",
-        title: "Trésorière — BDE GEA",
-        company: "Association étudiante",
-        period: "Sept. 2024 – Présent",
+        type: "Pro",
+        period: "Mars – Mai 2024",
+        title: "Stage en Gestion d'Entreprise",
+        company: "Coperton Holding",
         description:
-            "Gestion du budget associatif, suivi des dépenses et recettes, bilans en assemblée générale.",
+            "• Mise à jour comptes comptables et lettrage (comptabilité)\n• Catégorisation des entrées et sorties financières (logiciel Agicap)\n• Appels sortants fournisseurs (mise à jour information sur l'entreprise)\n• Classement divers documents (facture, devis)\n• Mise à jour des bases de données",
     },
     {
-        side: "left",
-        title: "Stage en Comptabilité",
-        company: "Cabinet comptable — XYZ",
-        period: "Avr. – Juin 2025",
+        type: "Personnel",
+        period: "Depuis 2019",
+        title: "Bénévole",
+        company: "Association SFTS",
         description:
-            "Saisie comptable, rapprochements bancaires et préparation des déclarations fiscales.",
+            "• Aide à l'organisation de soirées caritatives\n• Assistance au trésorier de l'association",
     },
 ];
 
-const GOLD = "#C9A84C";
-const ROSE = "#C47090";
-const GOLD_BG = "#F5EDD6";
-const ROSE_BG = "#FBF0F5";
-const GOLD_BORDER = "#E8D5A3";
-const ROSE_BORDER = "#F5D6E2";
-
 export function ParcourSection() {
     return (
-        <section id="parcours" className="scroll-mt-24 bg-white py-32">
-            <div className="mx-auto max-w-4xl px-8">
+        <section id="parcours" className="scroll-mt-24 py-32" style={{ background: "#FEFCF8" }}>
+            <div className="mx-auto max-w-6xl px-6 md:px-8 flex flex-col items-center">
 
-                {/* En-tête */}
-                <div className="mb-20 text-center">
-                    <div className="mb-5 flex items-center justify-center gap-3">
-                        <span className="h-px w-8 bg-[#C9A84C]" />
-                        <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">
-                            Parcours
-                        </span>
-                        <span className="h-px w-8 bg-[#C9A84C]" />
-                    </div>
+                {/* En-tête + Légende 2 mondes */}
+                <div className="mb-20 flex w-full flex-col items-center text-center">
                     <h2
-                        className="font-display text-5xl font-bold text-[#1C1815]"
+                        className="mb-8 font-display text-4xl font-bold text-[#1C1815] lg:text-5xl"
                         style={{ fontFamily: "var(--font-display)" }}
                     >
                         Expériences
                     </h2>
 
-                    {/* Légende des deux rails */}
-                    <div className="mt-8 inline-flex items-center gap-8 rounded-full border border-neutral-100 bg-[#FAFAF9] px-6 py-3">
-                        <div className="flex items-center gap-2">
-                            <span className="h-3 w-3 rounded-full bg-[#C9A84C]" />
-                            <span className="text-xs font-medium text-[#6B6058]">Professionnel</span>
+                    <p className="mb-6 max-w-md text-[#6B6058] text-sm leading-relaxed">
+                        Mon parcours se construit à la croisée de deux mondes : le <strong className="text-[#9E7B30]">professionnel</strong> et mes engagements <strong className="text-[#A0405E]">personnels</strong>.
+                    </p>
+
+                    <div className="flex flex-wrap items-center justify-center gap-6">
+                        <div className="flex items-center gap-3">
+                            <div
+                                className="size-5 bg-[#C9A84C]"
+                                style={{ borderRadius: "16px 16px 6px 16px" }}
+                            />
+                            <span className="text-[11px] font-bold uppercase tracking-widest text-[#9E7B30]">
+                                Monde Pro
+                            </span>
                         </div>
-                        <div className="h-4 w-px bg-neutral-200" />
-                        <div className="flex items-center gap-2">
-                            <span className="h-3 w-3 rounded-full bg-[#E8A4B8]" />
-                            <span className="text-xs font-medium text-[#6B6058]">Personnel</span>
+                        <div className="h-4 w-px bg-[#E8D5A3]" />
+                        <div className="flex items-center gap-3">
+                            <div
+                                className="size-5 bg-[#E8A4B8]"
+                                style={{ borderRadius: "16px 16px 16px 6px" }}
+                            />
+                            <span className="text-[11px] font-bold uppercase tracking-widest text-[#A0405E]">
+                                Monde Perso
+                            </span>
                         </div>
                     </div>
                 </div>
 
-                {/* ── Double rail + entrées ── */}
-                <div className="relative">
+                {/* ── Timeline Organique S-Curve ── */}
+                <div className="flex w-full flex-col items-center relative">
+                    {experiences.map((exp, i) => {
+                        const isEven = i % 2 === 0;
+                        const isPro = exp.type === "Pro";
 
-                    {/* Rail gauche — or */}
-                    <div
-                        className="absolute top-0 bottom-0 hidden w-0.5 md:block"
-                        style={{ left: "calc(50% - 10px)", background: `linear-gradient(to bottom, transparent, ${GOLD} 5%, ${GOLD} 95%, transparent)` }}
-                    />
-                    {/* Rail droit — rose */}
-                    <div
-                        className="absolute top-0 bottom-0 hidden w-0.5 md:block"
-                        style={{ left: "calc(50% + 10px)", background: `linear-gradient(to bottom, transparent, #E8A4B8 5%, #E8A4B8 95%, transparent)` }}
-                    />
+                        const color = isPro ? "#C9A84C" : "#E8A4B8";
+                        const mutedBg = isPro ? "#F5EDD6" : "#FBF0F5";
+                        const textColor = isPro ? "#9E7B30" : "#A0405E";
 
-                    {/* Entrées */}
-                    <div className="space-y-10">
-                        {entries.map((entry, i) => {
-                            const isLeft = entry.side === "left";
-                            const color = isLeft ? GOLD : ROSE;
-                            const bg = isLeft ? GOLD_BG : ROSE_BG;
-                            const borderColor = isLeft ? GOLD_BORDER : ROSE_BORDER;
-                            const dotColor = isLeft ? GOLD : "#E8A4B8";
+                        const nextExp = experiences[i + 1];
+                        const nextColor = nextExp?.type === "Pro" ? "#C9A84C" : "#E8A4B8";
 
-                            return (
+                        return (
+                            <div key={i} className="flex w-full flex-col items-center">
+                                {/* ── Bulle Expérience ── */}
                                 <div
-                                    key={i}
-                                    className={`relative flex items-start gap-4 ${isLeft ? "md:flex-row-reverse" : "md:flex-row"
-                                        } flex-col`}
+                                    className={`relative w-[90%] md:w-max md:max-w-full ${isEven ? 'md:self-start' : 'md:self-end'}`}
                                 >
-                                    {/* Carte */}
+                                    {/* Carte asymétrique organique sans halo lumineux */}
                                     <div
-                                        className={`group relative z-10 w-full rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md md:w-[calc(50%-32px)]`}
-                                        style={{ background: "white", borderColor }}
+                                        className="relative bg-white p-6 sm:p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-md"
+                                        style={{
+                                            border: `1px solid ${isPro ? "#E8D5A3" : "#F5D6E2"}`,
+                                            boxShadow: "0 4px 20px -10px rgba(0,0,0,0.05)",
+                                            borderRadius: isEven ? "32px 32px 32px 8px" : "32px 32px 8px 32px",
+                                        }}
                                     >
-                                        {/* Bande colorée haute */}
-                                        <div
-                                            className="absolute top-0 left-6 right-6 h-0.5 rounded-full transition-all duration-300 group-hover:left-4 group-hover:right-4"
-                                            style={{ background: color }}
-                                        />
+                                        <div className="mb-4 flex items-start justify-between gap-4">
+                                            <span
+                                                className="inline-block rounded-full px-3 py-1 text-[9px] font-bold uppercase tracking-widest"
+                                                style={{ background: mutedBg, color: textColor }}
+                                            >
+                                                {exp.type}
+                                            </span>
+                                        </div>
 
-                                        {/* Période */}
                                         <p
-                                            className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em]"
-                                            style={{ color }}
+                                            className="mb-1.5 font-display text-xl tracking-tight"
+                                            style={{ fontFamily: "var(--font-display)", color: color }}
                                         >
-                                            {entry.period}
+                                            {exp.period}
                                         </p>
 
-                                        {/* Titre */}
-                                        <h3
-                                            className="font-display mb-1 text-lg font-bold leading-snug text-[#1C1815]"
-                                            style={{ fontFamily: "var(--font-display)" }}
-                                        >
-                                            {entry.title}
+                                        <h3 className="mb-1 font-display text-lg font-bold text-[#1C1815]" style={{ fontFamily: "var(--font-display)" }}>
+                                            {exp.title}
                                         </h3>
-                                        <p className="mb-4 text-xs text-[#9A9088]">{entry.company}</p>
-                                        <p className="text-sm leading-relaxed text-[#6B6058]">
-                                            {entry.description}
+
+                                        <p className="mb-4 text-[11px] font-semibold uppercase tracking-wider text-[#9A9088]">
+                                            {exp.company}
+                                        </p>
+
+                                        <p className="text-sm leading-relaxed text-[#6B6058] whitespace-pre-line">
+                                            {exp.description}
                                         </p>
                                     </div>
-
-                                    {/* Dot sur le rail */}
-                                    <div
-                                        className="hidden shrink-0 md:flex items-center justify-center"
-                                        style={{ width: "64px" }}
-                                    >
-                                        <div
-                                            className="size-4 rounded-full border-2 border-white shadow-md ring-2"
-                                            style={{
-                                                background: dotColor,
-                                                boxShadow: `0 0 0 3px white, 0 0 0 5px ${dotColor}40`,
-                                                marginLeft: isLeft ? "8px" : "-8px",
-                                            }}
-                                        />
-                                    </div>
-
-                                    {/* Espace vide côté opposé (desktop) */}
-                                    <div className="hidden md:block md:w-[calc(50%-32px)]" />
                                 </div>
-                            );
-                        })}
-                    </div>
+
+                                {/* ── Connecteur Organique S-Curve ── */}
+                                {
+                                    i < experiences.length - 1 && (
+                                        <>
+                                            {/* Desktop Connector */}
+                                            <div className="hidden md:block w-[55%] h-20 my-2 relative self-center">
+                                                <svg className="absolute inset-0 h-full w-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                                    <defs>
+                                                        <linearGradient id={`grad-${i}`} x1="0" y1="0" x2="0" y2="1">
+                                                            <stop offset="0%" stopColor={color} />
+                                                            <stop offset="100%" stopColor={nextColor} />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path
+                                                        d={
+                                                            isEven
+                                                                ? "M 0 0 C 0 50, 100 50, 100 100"
+                                                                : "M 100 0 C 100 50, 0 50, 0 100"
+                                                        }
+                                                        stroke={`url(#grad-${i})`}
+                                                        strokeWidth="2.5"
+                                                        fill="none"
+                                                        strokeDasharray="5 5"
+                                                        vectorEffect="non-scaling-stroke"
+                                                    />
+                                                    <circle cx={isEven ? "0" : "100"} cy="0" r="4" fill={color} />
+                                                    <circle cx={isEven ? "100" : "0"} cy="100" r="4" fill={nextColor} />
+                                                </svg>
+                                            </div>
+
+                                            {/* Mobile Connector */}
+                                            <div className="md:hidden w-full h-12 my-2 flex justify-center">
+                                                <svg className="h-full w-10 overflow-visible" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                                    <defs>
+                                                        <linearGradient id={`grad-mob-${i}`} x1="0" y1="0" x2="0" y2="1">
+                                                            <stop offset="0%" stopColor={color} />
+                                                            <stop offset="100%" stopColor={nextColor} />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path
+                                                        d={
+                                                            isEven
+                                                                ? "M 50 0 C 100 33, 0 66, 50 100"
+                                                                : "M 50 0 C 0 33, 100 66, 50 100"
+                                                        }
+                                                        stroke={`url(#grad-mob-${i})`}
+                                                        strokeWidth="2.5"
+                                                        fill="none"
+                                                        strokeDasharray="5 5"
+                                                        vectorEffect="non-scaling-stroke"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </>
+                                    )
+                                }
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

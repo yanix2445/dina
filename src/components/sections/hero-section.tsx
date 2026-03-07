@@ -26,7 +26,7 @@ export function HeroSection() {
                 className="pointer-events-none absolute inset-0"
                 style={{
                     backgroundImage:
-                        "linear-gradient(#C9A84C0D 1px, transparent 1px), linear-gradient(90deg, #C9A84C0D 1px, transparent 1px)",
+                        "linear-gradient(#c9a84c1a 1px, transparent 1px), linear-gradient(90deg, #c9a84c1a 1px, transparent 1px)",
                     backgroundSize: "80px 80px",
                 }}
             />

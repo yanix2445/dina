@@ -7,6 +7,7 @@ const navLinks = [
     { label: "À propos", href: "#about" },
     { label: "Parcours", href: "#parcours" },
     { label: "Compétences", href: "#competences" },
+    { label: "Projets", href: "#projets" },
     { label: "Contact", href: "#contact" },
 ];
 
@@ -57,12 +58,21 @@ export function Header() {
                 </nav>
 
                 {/* CTA */}
-                <a
-                    href="#contact"
-                    className="rounded-full bg-[#C9A84C] px-5 py-2 text-[12px] font-semibold tracking-wide text-white shadow-sm transition-all duration-300 hover:bg-[#9E7B30] hover:shadow-md hover:shadow-[#C9A84C]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
-                >
-                    Me contacter
-                </a>
+                <div className="flex items-center gap-3">
+                    <a
+                        href="/Cv dina.pdf"
+                        target="_blank"
+                        className="hidden sm:inline-flex items-center gap-2 rounded-full border border-[#C9A84C]/50 px-5 py-2 text-[12px] font-semibold tracking-wide text-[#C9A84C] transition-all duration-300 hover:bg-[#C9A84C]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
+                    >
+                        <span>Télécharger CV</span>
+                    </a>
+                    <a
+                        href="#contact"
+                        className="rounded-full bg-[#C9A84C] px-5 py-2 text-[12px] font-semibold tracking-wide text-white shadow-sm transition-all duration-300 hover:bg-[#9E7B30] hover:shadow-md hover:shadow-[#C9A84C]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
+                    >
+                        Me contacter
+                    </a>
+                </div>
             </div>
         </header>
     );
