@@ -17,9 +17,21 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Dina RIANI — Portfolio",
+  title: "Dina Riani — Portfolio",
   description:
-    "Portfolio de Dina RIANI, étudiante en BUT GEA. Parcours, compétences et contact.",
+    "Portfolio de Dina Riani, étudiante en BUT GEA à Meaux. Spécialisation en contrôle de gestion, comptabilité et conseil financier.",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    title: "Dina Riani — Portfolio en BUT GEA",
+    description: "Découvrez mon parcours, mes compétences et mes projets en gestion des entreprises et administrations.",
+    siteName: "Portfolio Dina Riani",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dina Riani — Portfolio GEA",
+    description: "Étudiante en BUT GEA, parcours et compétences spécialisées en finance et contrôle de gestion.",
+  },
 };
 
 export default function RootLayout({

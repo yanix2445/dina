@@ -1,4 +1,4 @@
-"use client";
+
 
 type Project = {
     title: string;
