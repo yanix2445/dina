@@ -3,9 +3,9 @@ import Image from "next/image";
 
 
 const stats = [
-    { value: "2", label: "ans de BUT GEA" },
+    { value: "3", label: "ans de BUT GEA" },
     { value: "3", label: "stages & expériences" },
-    { value: "B2", label: "niveau anglais" },
+    { value: "B1", label: "niveau anglais" },
 ];
 
 export function AboutSection() {
@@ -75,7 +75,7 @@ export function AboutSection() {
 
                         <div className="space-y-4 text-base leading-relaxed text-neutral-500">
                             <p>
-                                Étudiante en deuxième année de BUT GEA, je me forme aux disciplines
+                                Étudiante en troisième année de BUT GEA, je me forme aux disciplines
                                 fondamentales de la gestion d'entreprise : comptabilité, analyse
                                 financière, droit des affaires et management.
                             </p>
