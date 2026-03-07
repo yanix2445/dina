@@ -114,8 +114,8 @@ export function Footer() {
                 {/* Section bas de page : Copyright et retour en haut */}
                 <div className="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row">
                     <div className="flex flex-col items-center gap-2 sm:items-start text-center sm:text-left">
-                        <p className="text-xs font-medium text-[#9A9088]">
-                            &copy; {new Date().getFullYear()} Dina RIANI. Tous droits réservés.
+                        <p className="text-xs font-medium text-[#9A9088]" suppressHydrationWarning>
+                            &copy; {new Date().getFullYear()} Dina Riani. Tous droits réservés.
                         </p>
                         <p className="text-[10px] text-[#9A9088]/80">
                             Fait avec passion pour le BUT GEA.
