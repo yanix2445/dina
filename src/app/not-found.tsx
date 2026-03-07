@@ -21,7 +21,7 @@ export default function NotFound() {
                     Page introuvable
                 </h2>
                 <p className="mb-10 max-w-md text-lg leading-relaxed text-[#6B6058]">
-                    Il semblerait que vous vous soyez égaré. La page que vous recherchez n'existe pas ou a été déplacée.
+                    Il semblerai que vous vous soyez égaré. La page que vous recherchez n'existe pas ou a été déplacée.
                 </p>
                 <Link
                     href="/"
