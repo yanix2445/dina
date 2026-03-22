@@ -10,12 +10,13 @@ const links = {
         { label: "Projets", href: "#projets" },
     ],
     contact: [
-        { label: "LinkedIn", href: "https://www.linkedin.com/in/dina-riani-53a876333/" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/dina-rianii/" },
         { label: "Email", href: "mailto:dinariani258@gmail.com" },
-        { label: "Téléphone", href: "tel:+33769053306" },
-        { label: "Curriculum Vitae", href: "/cv-dina-riani.pdf" },
+        { label: "Curriculum Vitae", href: "/cv-Dina-RIANI-Alternance.pdf" },
     ]
 };
+
+import { LegalModal } from "./legal-modal";
 
 export function Footer() {
     const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -74,7 +75,7 @@ export function Footer() {
                                     <a
                                         href={link.href}
                                         className="text-sm font-medium text-[#FEFCF8] transition-colors hover:text-[#C9A84C]"
-                                        {...(link.href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
+                                        {...((link.href.startsWith("http") || link.href.endsWith(".pdf")) && { target: "_blank", rel: "noopener noreferrer" })}
                                     >
                                         {link.label}
                                     </a>
@@ -91,7 +92,7 @@ export function Footer() {
                         <div className="flex flex-col gap-4">
                             <div>
                                 <p className="text-[11px] font-semibold text-[#9A9088] uppercase tracking-wider mb-1">Localisation</p>
-                                <p className="text-sm font-medium text-[#FEFCF8]">Meaux, France</p>
+                                <p className="text-sm font-medium text-[#FEFCF8]">Meaux, Paris, France</p>
                             </div>
                             <div>
                                 <p className="text-[11px] font-semibold text-[#9A9088] uppercase tracking-wider mb-1">Disponibilité</p>
@@ -100,7 +101,7 @@ export function Footer() {
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#C9A84C] opacity-75"></span>
                                         <span className="relative inline-flex size-2 rounded-full bg-[#C9A84C]"></span>
                                     </span>
-                                    Stage / Alternance 2025
+                                    Alternance Master 2026
                                 </div>
                             </div>
                         </div>
@@ -114,11 +115,14 @@ export function Footer() {
                 {/* Section bas de page : Copyright et retour en haut */}
                 <div className="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row">
                     <div className="flex flex-col items-center gap-2 sm:items-start text-center sm:text-left">
-                        <p className="text-xs font-medium text-[#9A9088]" suppressHydrationWarning>
+                        <p className="text-[11px] font-medium text-[#9A9088] tracking-wide" suppressHydrationWarning>
                             &copy; {new Date().getFullYear()} Dina Riani. Tous droits réservés.
                         </p>
-                        <p className="text-[10px] text-[#9A9088]/80">
-                            Fait avec passion pour le BUT GEA.
+                        <div className="h-px w-8 bg-[#C9A84C]/30 hidden sm:block my-0.5" />
+                        <p className="text-[10px] uppercase tracking-[0.15em] text-[#9A9088]/60">
+                            Design & Développement <span className="text-[#C9A84C]/80 ml-1">Yanis Harrat</span>
+                            <span className="mx-2 opacity-20">|</span>
+                            <LegalModal />
                         </p>
                     </div>
 

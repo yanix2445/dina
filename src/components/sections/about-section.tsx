@@ -1,12 +1,5 @@
 import Image from "next/image";
-
-
-
-const stats = [
-    { value: "3", label: "ans de BUT GEA" },
-    { value: "3", label: "stages & expériences" },
-    { value: "B1", label: "niveau anglais" },
-];
+import { stats } from "@/features/about/data/about.data";
 
 export function AboutSection() {
     return (
@@ -49,7 +42,7 @@ export function AboutSection() {
                                     Disponible
                                 </p>
                                 <p className="text-sm font-semibold text-neutral-800">
-                                    Dès juin 2025
+                                    Dès septembre 2026
                                 </p>
                             </div>
 
@@ -75,9 +68,9 @@ export function AboutSection() {
 
                         <div className="space-y-4 text-base leading-relaxed text-neutral-500">
                             <p>
-                                Étudiante en troisième année de BUT GEA, je me forme aux disciplines
+                                Bientôt diplômée d'un BUT GEA, je me suis formée aux disciplines
                                 fondamentales de la gestion d'entreprise : comptabilité, analyse
-                                financière, droit des affaires et management.
+                                financière, droit des affaires et contrôle de gestion.
                             </p>
                             <p>
                                 Mon approche est à la fois analytique et humaine. Je crois que

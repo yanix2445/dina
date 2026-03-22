@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -94,7 +95,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={cn(dmSans.variable, playfair.variable)}>
-      <body className={cn("antialiased")}>{children}</body>
+      <body className={cn("antialiased")}>
+        {children}
+        <Toaster richColors position="top-right" />
+      </body>
     </html>
   );
 }

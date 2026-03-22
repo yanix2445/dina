@@ -37,7 +37,7 @@ export function HeroSection() {
                 <div className="mb-8 flex items-center gap-3">
                     <span className="h-px w-8 bg-[#C9A84C]" />
                     <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">
-                        Portfolio — BUT GEA
+                        Portfolio
                     </span>
                     <span className="h-px w-8 bg-[#C9A84C]" />
                 </div>
@@ -58,8 +58,7 @@ export function HeroSection() {
 
                 {/* Accroche */}
                 <p className="max-w-xl text-lg font-light leading-relaxed text-neutral-500">
-                    Étudiante passionnée en Gestion des Entreprises et des Administrations,
-                    à la recherche d'une opportunité pour mettre en valeur mes compétences.
+                    Spécialisée en finance et contrôle de gestion, je suis à la recherche d'une alternance pour mon Master dès septembre 2026.
                 </p>
 
                 {/* CTAs */}

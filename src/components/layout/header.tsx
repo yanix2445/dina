@@ -60,8 +60,9 @@ export function Header() {
                 {/* CTA */}
                 <div className="flex items-center gap-2 sm:gap-3">
                     <a
-                        href="/cv-dina-riani.pdf"
+                        href="/cv-Dina-RIANI-Alternance.pdf"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 rounded-full border border-[#C9A84C]/50 px-3 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-[12px] font-semibold tracking-wide text-[#C9A84C] transition-all duration-300 hover:bg-[#C9A84C]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
                     >
                         <span>Télécharger CV</span>
