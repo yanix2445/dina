@@ -6,7 +6,7 @@ import { Certification } from "../types/skills.types";
  */
 export function CertificationsCard({ certifications }: { certifications: Certification[] }) {
     // Conteneur de niveau supérieur : fond noir profond (#1C1815),
-    // élévation au survol avec une ombre teintée dorée (#C9A84C).
+    // élévation au survol avec une ombre teintée dorée (#C9A84C)
     return (
         <div
             className="group relative overflow-hidden rounded-[32px] bg-[#1C1815] p-10 text-white transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#C9A84C]/20"
