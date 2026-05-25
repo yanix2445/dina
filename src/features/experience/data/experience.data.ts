@@ -162,6 +162,66 @@ Sur le plan relationnel et organisationnel, coordonner les agendas de 18 profess
         ],
     },
     {
+        slug: "sfts-evenementiel-logistique-caritatif",
+        type: "Personnel",
+        period: "Depuis 2024",
+        title: "Bénévole – Pôle Événementiel et Logistique",
+        company: "Solidarité Franco-Tunisienne de Santé (SFTS)",
+        description:
+            "• Organisation du gala de charité annuel pour récolter des fonds humanitaires\n• Négociation avec des artistes de renom pour des prestations à frais réduits\n• Gestion budgétaire des médicaments et coordination de l'envoi de matériel médical\n• Suivi logistique international des conteneurs d'équipements médicaux vers la Tunisie",
+        projectTitle: "Pilotage de l'événementiel caritatif au service de la santé",
+        sector: "Humanitaire & Événementiel Caritatif",
+        tools: ["Excel (Gestion budgétaire)", "Coordination Logistique", "Négociation Partenaires"],
+        keywords: ["Événementiel caritatif", "Logistique médicale", "Relations artistes", "Négociation", "Flux internationaux"],
+        sections: [
+            {
+                title: "Le Contexte : Un pont médical humanitaire",
+                content:
+                    `L'association SFTS a pour mission essentielle de pallier les difficultés d'accès aux soins de santé primaires et spécialisés dans les zones les plus reculées et défavorisées de Tunisie. Pour ce faire, elle organise régulièrement des "Journées de Santé" pluridisciplinaires sur le terrain, où des professionnels de santé (généralistes, pédiatres, ophtalmologues, dentistes) interviennent de manière entièrement bénévole.
+
+Afin de soutenir ces interventions de proximité, l'association assure l'envoi régulier de conteneurs maritimes internationaux remplis de matériel médical lourd réformé mais fonctionnel (lits médicalisés, respirateurs, fauteuils) et de médicaments essentiels depuis la France vers les hôpitaux tunisiens.`,
+            },
+            {
+                title: "Ma Mission : Transformer la mobilisation en ressources vitales",
+                content:
+                    `Au sein du pôle événementiel et logistique de l'association, mon rôle est de sécuriser les financements cruciaux nécessaires à la réalisation de ces expéditions médicales et de ces actions d'envergure, avec un focus opérationnel sur l'organisation du Gala de Charité Annuel :
+
+• Ingénierie & Négociation Artistique :
+Je suis chargée d'entrer en relation avec des célébrités et des artistes de renom de la scène tunisienne. Mon objectif est de les convaincre de se produire bénévolement ou à frais très réduits lors de notre gala annuel. Par une argumentation financière solide sur le retour sur investissement social et la cause humanitaire, je négocie les contrats pour maximiser la marge nette du gala.
+
+• Allocation Stratégique des Ressources :
+L'intégralité des bénéfices de la billetterie et des dons récoltés lors du gala is directement affectée à des actions de santé critiques : financement d'interventions chirurgicales d'urgence pour des enfants atteints de cancer en Tunisie ou achat de lots de médicaments indispensables.
+
+• Logistique Douanière & Approvisionnement :
+Je participe activement à la coordination de la collecte de dons d'équipements (auprès des cliniques, pharmacies et cabinets médicaux partenaires en France) et à la planification du chargement des conteneurs maritimes. Je gère également le budget d'achat des médicaments manquants pour garantir la gratuité totale des soins dispensés sur place.`,
+            },
+            {
+                title: "Les Défis Rencontrés : L'optimisation extrême au service de l'éthique",
+                content:
+                    `Le principal défi de l'action caritative réside dans la rationalisation et l'optimisation absolue de chaque ligne de coûts de fonctionnement. En milieu associatif humanitaire, chaque euro dépensé en trop pour l'organisation du gala de charité (traiteur, décoration, communication) est un euro en moins investi dans une opération chirurgicale vitale ou dans des traitements médicaux pour les populations isolées.
+
+Gérer ces négociations serrées avec les prestataires tout en assurant une réactivité logistique constante pour les flux de conteneurs douaniers hors Union Européenne exige une rigueur intellectuelle de chaque instant et une forte adaptabilité face aux aléas de la supply chain internationale.`,
+            },
+        ],
+        results: [
+            {
+                title: "Impact concret",
+                content:
+                    "Grâce au succès financier et logistique de nos événements annuels, plusieurs opérations chirurgicales lourdes d'enfants atteints de cancer ont pu être intégralement financées. Des tonnes de matériel médical lourd et de lits médicalisés ont été acheminées avec succès par conteneurs maritimes vers des hôpitaux régionaux en Tunisie.",
+            },
+            {
+                title: "Posture de gestionnaire",
+                content:
+                    "Cette expérience m'a enseigné que le contrôle de gestion n'est pas uniquement un levier de rentabilité capitaliste, mais un formidable outil de solidarité sociale. Réduire minutieusement les charges d'organisation d'un événement caritatif devient une responsabilité éthique et humaine pour maximiser l'impact direct sur la vie des bénéficiaires.",
+            },
+            {
+                title: "Compétence transversale",
+                content:
+                    "Piloter et coordonner des flux internationaux complexes d'équipements médicaux et de médicaments entre la France et la Tunisie fait écho à mes missions de gestion des flux de matières premières chez Ruby Rose, renforçant mes compétences en logistique, douanes et gestion d'échanges hors Union Européenne.",
+            },
+        ],
+    },
+    {
         slug: "coperton-holding-assistante-direction",
         type: "Pro",
         period: "Mars – Mai 2024",

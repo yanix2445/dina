@@ -102,6 +102,16 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                     className="size-28 md:size-36 rounded-[2rem] object-contain border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
                             )}
+                            {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
+                                <div className="size-28 md:size-36 rounded-[2rem] border border-neutral-200/80 shadow-xl bg-gradient-to-br from-[#0D9488] to-[#0F766E] p-1 flex items-center justify-center shrink-0">
+                                    <div className="flex flex-col items-center justify-center text-white">
+                                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-1.5 animate-pulse text-[#E8A4B8]">
+                                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                        </svg>
+                                        <span className="text-xs font-bold uppercase tracking-widest">SFTS</span>
+                                    </div>
+                                </div>
+                            )}
                             
                             {/* Titre du projet (si enrichi) ou titre du poste décalé sur la droite */}
                             <div className="flex-1 text-left">
@@ -500,6 +510,78 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                              </div>
                                          )}
 
+                                          {/* Infographie d'impact caritatif (SFTS) */}
+                                          {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
+                                              <div className="rounded-[24px] bg-gradient-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden text-left">
+                                                  {/* Ambient Glow */}
+                                                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#0D9488]/5 blur-2xl pointer-events-none" />
+                                                  
+                                                  <div className="flex items-center gap-2 mb-6">
+                                                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0D9488" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                                      </svg>
+                                                      <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0D9488]">
+                                                          Infographie d'Impact
+                                                      </h3>
+                                                  </div>
+
+                                                  <div className="flex flex-col gap-6 relative">
+                                                      {/* L'achat de billet */}
+                                                      <div className="flex items-start gap-4">
+                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.03] border border-white/[0.05] text-[#E8A4B8] shadow-xs">
+                                                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                                  <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+                                                              </svg>
+                                                          </div>
+                                                          <div className="flex flex-col">
+                                                              <span className="text-[11px] font-bold text-[#FEFCF8]">1 Billet de Gala Acheté</span>
+                                                              <span className="text-xs text-neutral-400 mt-0.5">Valeur moyenne : 50 € de contribution directe.</span>
+                                                          </div>
+                                                      </div>
+
+                                                      {/* Connecteur vertical */}
+                                                      <div className="absolute left-5 top-10 bottom-6 w-0.5 bg-gradient-to-b from-[#E8A4B8] to-[#0D9488]" />
+
+                                                      {/* L'impact en soins */}
+                                                      <div className="flex items-start gap-4 z-10">
+                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.03] border border-white/[0.05] text-[#0D9488] shadow-xs">
+                                                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                                  <path d="m12 3-1.912 5.886H3.873l4.947 3.596L6.908 18.37 12 14.774l5.092 3.596-1.912-5.002 4.947-3.596h-6.215Z" />
+                                                              </svg>
+                                                          </div>
+                                                          <div className="flex flex-col">
+                                                              <span className="text-[11px] font-bold text-[#FEFCF8]">Impact Solidaire Direct</span>
+                                                              <span className="text-xs text-neutral-400 mt-0.5">Permet de fournir <strong>15 kits de médicaments</strong> ou finance des journées de dépistage ophtalmologique gratuites.</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          )}
+
+                                          {/* Encadré Négociation Artistique (SFTS) */}
+                                          {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
+                                              <div className="rounded-[24px] p-6 border transition-all duration-300 text-left bg-gradient-to-br from-[#FEFCF8] to-[#FFF9FA]" style={{ borderColor: `${color}40` }}>
+                                                  <div className="flex items-center gap-2 mb-4">
+                                                      <div className="size-2 rounded-full" style={{ background: color }} />
+                                                      <h3 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#1C1815]">Focus Négociation</h3>
+                                                  </div>
+                                                  <div className="flex flex-col gap-3">
+                                                      <div className="flex size-8 items-center justify-center rounded-lg bg-neutral-100 text-[#1C1815]">
+                                                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                              <circle cx="9" cy="7" r="4" />
+                                                              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                                              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                                          </svg>
+                                                      </div>
+                                                      <p className="text-xs font-semibold text-[#1C1815] leading-relaxed">Convaincre & Fédérer</p>
+                                                      <p className="text-xs text-[#6B6058] leading-relaxed">
+                                                          Capacité à mener des négociations complexes avec des artistes et managers (production, logistique et cachets) afin d'assurer leur prestation bénévole lors des galas et maximiser ainsi la marge nette réinjectée dans les soins.
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          )}
+
                                         {/* Documents & Livrables */}
                                         {experience.recommendationLetters && experience.recommendationLetters.length > 0 && (
                                             <div className="flex flex-col gap-3">
@@ -690,6 +772,66 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             </div>
                                         </div>
                                     )}
+
+                                     {/* Galerie Photos : Solidarité Franco-Tunisienne de Santé (SFTS) */}
+                                     {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
+                                         <div className="mt-20">
+                                             <div className="mb-8 flex items-center gap-3">
+                                                 <span className="h-px w-8" style={{ background: color }} />
+                                                 <span className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color }}>
+                                                     Galerie Photo : Actions Événementielles & Logistiques
+                                                 </span>
+                                             </div>
+
+                                             <div className="grid gap-6 sm:grid-cols-2">
+                                                 {[
+                                                     {
+                                                         src: "/sfts/IMG_3535.jpeg",
+                                                         title: "Le Gala de Charité Annuel",
+                                                         desc: "Mobilisation et collecte de fonds à travers un grand spectacle d'artistes engagés pour la cause médicale."
+                                                     },
+                                                     {
+                                                         src: "/sfts/IMG_6113.jpg",
+                                                         title: "Logistique internationale & Expéditions",
+                                                         desc: "Chargement et logistique de conteneurs maritimes d'équipements lourds vers les hôpitaux régionaux."
+                                                     },
+                                                     {
+                                                         src: "/sfts/IMG_6033.jpg",
+                                                         title: "Journées de Santé & Soins Gratuits",
+                                                         desc: "Consultations et distribution de médicaments gratuits dispensées aux populations isolées en Tunisie."
+                                                     },
+                                                     {
+                                                         src: "/sfts/IMG_5743.jpg",
+                                                         title: "Gestion des Stocks de Médicaments",
+                                                         desc: "Tri minutieux, inventaire analytique et sécurisation des lots de dons médicaux en France."
+                                                     }
+                                                 ].map((imgItem, idx) => (
+                                                     <div
+                                                         key={idx}
+                                                         className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
+                                                     >
+                                                         <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                             <img
+                                                                 src={imgItem.src}
+                                                                 alt={imgItem.title}
+                                                                 className="h-full w-full object-cover"
+                                                                 onError={(e) => { e.currentTarget.src = "/fallback-sfts.jpg"; }}
+                                                                 loading="lazy"
+                                                             />
+                                                         </div>
+                                                         <div className="p-5">
+                                                             <h4 className="font-display text-sm font-bold text-[#1C1815]">
+                                                                 {imgItem.title}
+                                                             </h4>
+                                                             <p className="mt-1.5 text-xs leading-relaxed text-[#6B6058]">
+                                                                 {imgItem.desc}
+                                                             </p>
+                                                         </div>
+                                                     </div>
+                                                 ))}
+                                             </div>
+                                         </div>
+                                     )}
 
                                     {/* Galerie Photos : Immersion au Laboratoire */}
                                     {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
