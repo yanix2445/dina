@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: "Portfolio Dina Riani",
     images: [
       {
-        url: "/portrait-dina.png",
+        url: "/portrait-dina.jpg",
         width: 1200,
         height: 630,
         alt: "Dina Riani — Portfolio BUT GEA",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "Dina Riani — Portfolio GEA",
     description:
       "Étudiante en BUT GEA, parcours et compétences spécialisées en finance et contrôle de gestion.",
-    images: ["/portrait-dina.png"],
+    images: ["/portrait-dina.jpg"],
   },
   robots: {
     index: true,

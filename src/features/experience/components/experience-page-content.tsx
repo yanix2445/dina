@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Experience } from "../types/experience.types";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -89,16 +90,22 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                         <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12 mb-8">
                             {/* Grand Logo de l'entreprise */}
                             {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
-                                <img
+                                <Image
                                     src="/ruby-rose/logo.jpeg"
                                     alt="Ruby Rose Logo"
+                                    width={144}
+                                    height={144}
+                                    sizes="(max-width: 768px) 112px, 144px"
                                     className="size-28 md:size-36 rounded-[2rem] object-cover border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
                             )}
                             {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
-                                <img
+                                <Image
                                     src="/alumni/logo.png"
                                     alt="Alumni GEA Meaux Logo"
+                                    width={144}
+                                    height={144}
+                                    sizes="(max-width: 768px) 112px, 144px"
                                     className="size-28 md:size-36 rounded-[2rem] object-contain border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
                             )}
@@ -727,7 +734,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             <div className="grid gap-6 sm:grid-cols-2">
                                                 {[
                                                     {
-                                                        src: "/alumni/image-arrivee-invites.png",
+                                                        src: "/alumni/image-arrivee-invites.jpg",
                                                         title: "Étape 1 : Accueil des invités & Cocktail d'arrivée",
                                                         desc: "Arrivée et émargement des professionnels (Alumni) et étudiants pour la conférence."
                                                     },
@@ -737,7 +744,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                         desc: "La prestigieuse salle Bossuet gracieusement mise à disposition par la Mairie de Meaux."
                                                     },
                                                     {
-                                                        src: "/alumni/buffet.png",
+                                                        src: "/alumni/buffet.jpg",
                                                         title: "Étape 3 : Buffet traiteur de célébration",
                                                         desc: "Le somptueux buffet inclusif préparé pour les 75 participants lors des temps d'échange."
                                                     },
@@ -751,12 +758,13 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                         key={idx}
                                                         className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                     >
-                                                        <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
-                                                            <img
+                                                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                            <Image
                                                                 src={imgItem.src}
                                                                 alt={imgItem.title}
-                                                                className="h-full w-full object-cover"
-                                                                loading="lazy"
+                                                                fill
+                                                                sizes="(max-width: 640px) 100vw, 50vw"
+                                                                className="object-cover"
                                                             />
                                                         </div>
                                                         <div className="p-5">
@@ -810,13 +818,13 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                          key={idx}
                                                          className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                      >
-                                                         <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
-                                                             <img
+                                                         <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                             <Image
                                                                  src={imgItem.src}
                                                                  alt={imgItem.title}
-                                                                 className="h-full w-full object-cover"
-                                                                 onError={(e) => { e.currentTarget.src = "/fallback-sfts.jpg"; }}
-                                                                 loading="lazy"
+                                                                 fill
+                                                                 sizes="(max-width: 640px) 100vw, 50vw"
+                                                                 className="object-cover"
                                                              />
                                                          </div>
                                                          <div className="p-5">
@@ -870,12 +878,13 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                         key={idx}
                                                         className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                     >
-                                                        <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
-                                                            <img
+                                                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                            <Image
                                                                 src={imgItem.src}
                                                                 alt={imgItem.title}
-                                                                className="h-full w-full object-cover"
-                                                                loading="lazy"
+                                                                fill
+                                                                sizes="(max-width: 640px) 100vw, 50vw"
+                                                                className="object-cover"
                                                             />
                                                         </div>
                                                         <div className="p-5">
