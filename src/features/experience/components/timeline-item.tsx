@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Experience } from "../types/experience.types";
 
 /**
@@ -28,7 +29,7 @@ export function TimelineItem({ exp, isEven }: { exp: Experience; isEven: boolean
                     borderRadius: isEven ? "32px 32px 32px 8px" : "32px 32px 8px 32px",
                 }}
             >
-                {/* En-tête : Badge dynamique (Pro / Formation) */}
+                {/* En-tête : Badge dynamique (Pro / Formation) + Bouton "Voir détails" */}
                 <div className="mb-4 flex items-start justify-between gap-4">
                     <span
                         className="inline-block rounded-full px-3 py-1 text-[9px] font-bold uppercase tracking-widest"
@@ -36,6 +37,32 @@ export function TimelineItem({ exp, isEven }: { exp: Experience; isEven: boolean
                     >
                         {exp.type}
                     </span>
+
+                    {/* Bouton vers la page dédiée */}
+                    <Link
+                        href={`/experience/${exp.slug}`}
+                        className="group flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider transition-all duration-300"
+                        style={{
+                            color: textColor,
+                            background: mutedBg,
+                        }}
+                        aria-label={`Voir les détails de l'expérience ${exp.title}`}
+                    >
+                        <span className="hidden sm:inline">Détails</span>
+                        <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="transition-transform group-hover:translate-x-0.5"
+                        >
+                            <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+                        </svg>
+                    </Link>
                 </div>
 
                 {/* Date / Période avec la couleur principale dynamique */}

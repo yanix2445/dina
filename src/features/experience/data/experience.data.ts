@@ -2,47 +2,117 @@ import { Experience } from "../types/experience.types";
 
 export const experiences: Experience[] = [
     {
+        slug: "wiame-groupe-controle-de-gestion",
         type: "Pro",
         period: "Février – Juillet 2026",
         title: "Assistante Contrôle de Gestion (Stage)",
         company: "Wiame Groupe",
         description:
-            "• Élaboration de procédures internes pour structurer les méthodes de travail\n• Création et pilotage de tableaux de bord pour le suivi de l'activité\n• Consolidation de données financières et analyse mensuelle des résultats\n• Participation aux clôtures mensuelles et saisie comptable des provisions\n• Calcul des prix de revient et optimisation des processus existants\n• Analyse des écarts pour l'aide à la décision de la direction\n• Contribution à la révision budgétaire et analyse des prévisions\n• Revue des immobilisations pour garantir la conformité du registre",
+            "• Élaboration de procédures internes pour structurer les méthodes de travail\n• Création et pilotage de tableaux de bord pour le suivi de l\u2019activité\n• Consolidation de données financières et analyse mensuelle des résultats\n• Participation aux clôtures mensuelles et saisie comptable des provisions\n• Calcul des prix de revient et optimisation des processus existants\n• Analyse des écarts pour l\u2019aide à la décision de la direction\n• Contribution à la révision budgétaire et analyse des prévisions\n• Revue des immobilisations pour garantir la conformité du registre",
     },
     {
+        slug: "bde-iut-meaux-tresoriere",
         type: "Personnel",
         period: "2024 – 2026",
         title: "Trésorière du BDE",
         company: "BDE IUT de Meaux",
         description:
-            "• Gestion de la trésorerie et pilotage du budget prévisionnel de l'association\n• Contrôle rigoureux des encaissements et des dépenses courantes\n• Reporting financier régulier sur Excel pour assurer la transparence\n• Organisation logistique d'événements et de la vie étudiante\n• Gestion des flux financiers liés aux projets associatifs",
+            "• Gestion de la trésorerie et pilotage du budget prévisionnel de l\u2019association\n• Contrôle rigoureux des encaissements et des dépenses courantes\n• Reporting financier régulier sur Excel pour assurer la transparence\n• Organisation logistique d\u2019événements et de la vie étudiante\n• Gestion des flux financiers liés aux projets associatifs",
     },
     {
+        slug: "ruby-rose-beauty-controle-de-gestion",
         type: "Pro",
         period: "Mars – Juin 2025",
         title: "Assistante Contrôle de Gestion & Assistante de Direction (Stage)",
         company: "Ruby Rose Beauty France",
         description:
-            "• Mise en place de la comptabilité analytique (centres de coûts et clés de répartition)\n• Calcul des coûts de revient (RCA) pour les produits et formules cosmétiques\n• Gestion complète de la facturation et rapprochements bancaires sur Tiime\n• Coordination internationale entre l'usine en Turquie et le marketing au Brésil\n• Structuration des données techniques en lien avec le pôle R&D\n• Suivi des prix de transfert et des relations financières entre les filiales\n• Interface transversale entre la formulation, la finance et le marketing\n• Amélioration des process internes pour optimiser l'organisation",
+            "• Mise en place de la comptabilité analytique (centres de coûts et clés de répartition)\n• Calcul des coûts de revient (RCA) pour les produits et formules cosmétiques\n• Gestion complète de la facturation et rapprochements bancaires sur Tiime\n• Coordination internationale entre l’usine en Turquie et le marketing au Brésil\n• Structuration des données techniques en lien avec le pôle R&D\n• Suivi des prix de transfert et des relations financières entre les filiales\n• Interface transversale entre la formulation, la finance et le marketing\n• Amélioration des process internes pour optimiser l’organisation",
         recommendationLetters: [
             { label: "Lettre de Recommandation", href: "/LR-RRBF.pdf" },
+            { label: "Rapport de Stage (PDF)", href: "/ruby%20rose/Rapport%20Stage%20Dina%20RRBF.pdf" },
+            { label: "Soutenance de Stage (PPTX)", href: "/ruby%20rose/Pr%C3%A9sentation%20Rapport%20de%20Stage%20RRBF%20copie.pptx.pptx" },
+        ],
+
+        // ── Contenu enrichi pour la page dédiée ──
+        projectTitle: "Mise en place du pilotage de la performance internationale",
+        sector: "Industrie cosmétique internationale",
+        tools: ["RCA (module ACR)", "Tiime Expert", "Tiime Invoice"],
+        keywords: ["Comptabilité analytique", "Coûts de revient", "Flux intra-groupe", "Digitalisation"],
+        sections: [
+            {
+                title: "Le Contexte : Le défi d’une structuration financière au cœur d’un flux triangulaire mondial",
+                content:
+                    `Ruby Rose Beauty France n’est pas qu’un simple laboratoire de cosmétiques ; c’est le cœur d'innovation et le point pivot financier d’un groupe de cosmétiques d'envergure internationale. Au cours de ce stage de 10 semaines, j’ai évolué au sein d’un écosystème d’une grande complexité opérationnelle, caractérisé par un flux triangulaire mondial : la filiale française conçoit et formule les produits cosmétiques haut de gamme en se basant sur les benchmarks et les exigences du marketing stratégique situé au Brésil (siège opérationnel), tandis que la production industrielle en série est assurée par l'usine de fabrication du groupe en Turquie.
+
+Le défi stratégique était majeur : Ruby Rose Beauty France, alors en pleine phase d'hypercroissance, ne disposait d’aucun système de comptabilité analytique ni d'outils de suivi précis de sa performance financière. Les coûts opérationnels du laboratoire de R&D (salaires des chimistes, matières premières de formulation, amortissements des équipements de pointe) s’accumulaient sans être correctement alloués ou valorisés. Sans visibilité sur les coûts réels de formulation, l'entité française ne pouvait ni justifier ses prix de transfert auprès du groupe, ni valoriser sa création de propriété intellectuelle auprès de l'usine turque, s'exposant ainsi à d'importants risques de trésorerie et de conformité fiscale internationale (règles de l'OCDE sur les prix de transfert).`,
+            },
+            {
+                title: "Ma Mission : D’une comptabilité générale brute à une ingénierie financière décisionnelle",
+                content:
+                    `Placée sous la responsabilité directe de la Directrice Générale, ma mission consistait à concevoir de toutes pièces et à déployer le système de pilotage financier de la filiale. J'ai structuré mon intervention autour de quatre piliers méthodologiques :
+
+1. L'assainissement et la fiabilisation de la donnée financière (Tiime Expert)
+Avant de modéliser le moindre coût, il fallait s'assurer de la pureté de la donnée comptable. J'ai audité et mis à jour l'intégralité de la comptabilité générale sur Tiime Expert. De la saisie rigoureuse des écritures courantes aux rapprochements bancaires complexes, en passant par le cadrage minutieux de la TVA et l'intégration des immobilisations matérielles (matériel de laboratoire de haute technologie), j'ai redressé la balance générale pour en faire un socle d'information 100 % fiable et inattaquable.
+
+2. L'architecture de la comptabilité analytique sur-mesure (RCA - module ACR)
+J'ai conçu et paramétré la structure analytique de l'entreprise sur le logiciel RCA. J'ai défini deux centres de profit et de coûts distincts : l'activité historique de « Formulation R&D » (génératrice d'actifs incorporels) et l'activité commerciale d'« Achat-Revente ». L'enjeu technique résidait dans l'établissement de clés de répartition des charges indirectes (loyers, électricité, frais généraux, amortissements des machines) basées sur des inducteurs physiques et temporels validés avec le pôle scientifique.
+
+3. L'ingénierie du modèle de refacturation intra-groupe (« Cost + 5 % »)
+Pour assurer l'autonomie financière et la rentabilité de la filiale française, j'ai modélisé et mis en œuvre un système mensuel de refacturation cumulatif vers l'usine de production en Turquie. Ce mécanisme de prix de transfert, basé sur une marge de « Cost + 5 % », permettait de récupérer l'intégralité des dépenses opérationnelles du laboratoire français (salaires, consommables, frais généraux) majorées d'un taux de marge conforme aux standards fiscaux internationaux, garantissant ainsi un flux de trésorerie constant et prévisible.
+
+4. La sécurisation de la supply chain administrative et douanière
+En parallèle, j'ai pris en main la gestion opérationnelle des flux de matières premières importées pour les essais. J'ai rédigé les factures d'exportation vers la Turquie et le Brésil, géré les formalités douanières hors Union Européenne et mis en place les attestations de franchise de TVA (article 275 du CGI) pour optimiser le besoin en fonds de roulement (BFR) en évitant le décaissement inutile de taxes sur les importations.`,
+            },
+            {
+                title: "Les Défis Surmontés : Traduire la science en chiffres et naviguer dans la complexité fiscale",
+                content:
+                    `Ce projet d'envergure m'a confrontée à des défis de taille, tant techniques qu'humains :
+
+• Le dialogue interdisciplinaire et la vulgarisation financière
+Il a fallu combler le fossé culturel entre le langage de la science (les chimistes de R&D centrés sur les formules et les ingrédients), la vision commerciale (le marketing brésilien concentré sur les tendances de marché et les contraintes budgétaires extrêmes) et la rigueur comptable. J'ai dû faire preuve d'empathie et de pédagogie pour expliquer pourquoi chaque gramme de matière première ou chaque heure passée en laboratoire devait être tracé et comptabilisé afin d'obtenir un coût de revient fiable.
+
+• La maîtrise accélérée d'outils professionnels spécialisés
+N'ayant pas de formation préalable approfondie sur RCA (module ACR) ni sur l'écosystème Tiime Expert, j'ai dû monter en compétences de manière autonome et extrêmement rapide (en moins de deux semaines) pour être opérationnelle sur le paramétrage complexe des clés de répartition et des plans comptables analytiques.
+
+• La conformité douanière et fiscale hors UE
+Les échanges de matières premières et de formules de produits de beauté impliquaient des flux de marchandises et financiers complexes hors Union Européenne. Comprendre et appliquer correctement les règles de douanes, de TVA à l'exportation et les principes de pleine concurrence de l'OCDE sur les prix de transfert a exigé une rigueur intellectuelle absolue pour prémunir la filiale de tout risque de redressement fiscal.`,
+            },
+        ],
+        results: [
+            {
+                title: "Résultat concret",
+                content:
+                    "J’ai livré à la Direction Générale un outil de pilotage analytique automatisé et auditable sous RCA. Désormais, chaque formule cosmétique créée possède son coût de revient précis et indiscutable. Ce tableau de bord permet à la DG de négocier et de justifier avec assurance les prix de transfert face au CFO du groupe et aux commissaires aux comptes.",
+            },
+            {
+                title: "Compétence acquise",
+                content:
+                    "Ce stage a ancré en moi la conviction que le contrôle de gestion stratégique est stérile sans une comptabilité générale d'une précision chirurgicale. Une seule omission de facturation ou une mauvaise écriture d'immobilisation sur Tiime Expert fausse instantanément la rentabilité analytique globale et peut induire la direction en erreur.",
+            },
+            {
+                title: "Posture",
+                content:
+                    "Évoluer dans un laboratoire de cosmétiques m'a appris à sortir du cadre strictement financier. J'ai développé une posture d'écoute active et de médiation, devenant le traducteur privilégié capable de transformer des réalités scientifiques et marketing en données financières exploitables pour la performance du groupe.",
+            },
         ],
     },
     {
+        slug: "alumni-gea-meaux-tresoriere-fondatrice",
         type: "Personnel",
         period: "2024 – 2025",
         title: "Trésorière & Fondatrice du Projet Alumni",
         company: "Alumni GEA Meaux",
         description:
-            "• Création et structuration complète du réseau Alumni GEA Meaux\n• Gestion des relations institutionnelles (mairie, sponsors et partenaires)\n• Coordination du réseau et interface directe avec les anciens élèves\n• Supervision opérationnelle d'une conférence pour 100 personnes\n• Pilotage budgétaire et optimisation des ressources du projet",
+            "• Création et structuration complète du réseau Alumni GEA Meaux\n• Gestion des relations institutionnelles (mairie, sponsors et partenaires)\n• Coordination du réseau et interface directe avec les anciens élèves\n• Supervision opérationnelle d\u2019une conférence pour 100 personnes\n• Pilotage budgétaire et optimisation des ressources du projet",
     },
     {
+        slug: "coperton-holding-assistante-direction",
         type: "Pro",
         period: "Mars – Mai 2024",
         title: "Assistante de Direction & Assistante Comptable (Stage)",
         company: "Coperton Holding",
         description:
-            "• Mise à jour et lettrage des comptes pour assurer la fiabilité comptable\n• Actualisation rigoureuse des bases de données et dossiers tiers\n• Gestion de la relation fournisseurs via des campagnes d'appels sortants\n• Organisation et classement structuré des pièces comptables (factures, devis)\n• Pilotage et catégorisation des flux de trésorerie sur le logiciel Agicap\n• Suivi quotidien des entrées et sorties financières pour le reporting",
+            "• Mise à jour et lettrage des comptes pour assurer la fiabilité comptable\n• Actualisation rigoureuse des bases de données et dossiers tiers\n• Gestion de la relation fournisseurs via des campagnes d\u2019appels sortants\n• Organisation et classement structuré des pièces comptables (factures, devis)\n• Pilotage et catégorisation des flux de trésorerie sur le logiciel Agicap\n• Suivi quotidien des entrées et sorties financières pour le reporting",
         recommendationLetters: [
             { label: "Lettre de Recommandation 1", href: "/LR-Coperton.pdf" },
             { label: "Lettre de Recommandation 2", href: "/LR2-Coperton.pdf" },
