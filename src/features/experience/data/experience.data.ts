@@ -99,11 +99,67 @@ Les échanges de matières premières et de formules de produits de beauté impl
     {
         slug: "alumni-gea-meaux-tresoriere-fondatrice",
         type: "Personnel",
-        period: "2024 – 2025",
+        period: "Septembre 2024 – Juin 2025",
         title: "Trésorière & Fondatrice du Projet Alumni",
         company: "Alumni GEA Meaux",
         description:
-            "• Création et structuration complète du réseau Alumni GEA Meaux\n• Gestion des relations institutionnelles (mairie, sponsors et partenaires)\n• Coordination du réseau et interface directe avec les anciens élèves\n• Supervision opérationnelle d\u2019une conférence pour 100 personnes\n• Pilotage budgétaire et optimisation des ressources du projet",
+            "• Création et structuration complète du réseau Alumni GEA Meaux\n• Gestion des relations institutionnelles (mairie, sponsors et partenaires)\n• Coordination du réseau et interface directe avec les anciens élèves\n• Supervision opérationnelle d’une conférence pour 100 personnes\n• Pilotage budgétaire et optimisation des ressources du projet",
+        recommendationLetters: [
+            { label: "Mémoire du Projet Alumni (PDF)", href: "/alumni/M%C3%A9moire-projet-Alumni%20.pdf" },
+            { label: "Présentation du Projet Alumni (PDF)", href: "/alumni/Pr%C3%A9sentation-projet-alumni%20.pdf" },
+            { label: "Tableau de bord de Trésorerie (Excel)", href: "/alumni/Alumni%20Gea%20Meaux.xlsx" },
+        ],
+        projectTitle: "Création et structuration du réseau Alumni GEA Meaux",
+        sector: "Projet Associatif & Événementiel",
+        tools: ["Excel (Gestion budgétaire)", "Airtable (Base de données)", "Billetweb (Billetterie)"],
+        keywords: ["Réseau Alumni", "Gestion budgétaire", "Événementiel", "Partenariats publics", "RGPD"],
+        sections: [
+            {
+                title: "Le Contexte : Transformer une idée en institution",
+                content:
+                    `Le projet est né de la volonté de créer une passerelle solide et durable entre les 25 promotions d'anciens diplômés (Alumni) de l'IUT et les étudiants actuels. En tant que fondatrice de cette initiative, j'ai dû assumer une double casquette : d'une part sécuriser l'intégralité des ressources financières indispensables à la viabilité du projet, et d'autre part déployer une communication ciblée pour asseoir sa visibilité auprès des élus locaux, des partenaires et des anciens élèves.
+
+Partant d'une feuille blanche, il a fallu concevoir une structure fédératrice capable de traverser le temps et d'apporter une vraie valeur ajoutée aux futurs diplômés dans la construction de leur parcours professionnel.`,
+            },
+            {
+                title: "Mes Missions : La rigueur financière au service de l'événementiel",
+                content:
+                    `Mes responsabilités ont couvert l'intégralité de la chaîne de valeur du projet associatif, alliant gestion de projet et direction financière :
+
+• Ingénierie Financière & Trésorerie :
+J'ai conçu et mis en œuvre des campagnes d'autofinancement (organisation de ventes de photos pour les diplômés, stand au marché de Noël de l'IUT) qui ont permis de récolter un budget initial de 1 353,77 €. J'ai assuré le suivi analytique rigoureux de ce budget sous Excel, optimisant les lignes de dépenses (buffet, sécurité professionnelle, matériel de sonorisation et communication visuelle) pour garantir l'équilibre parfait de l'événement.
+
+• Stratégie de Partenariats & Négociation Institutionnelle :
+J'ai été le point de contact privilégié avec la Mairie de Meaux. Par une argumentation solide et la mise en avant de l'intérêt territorial du projet, j'ai négocié et obtenu la mise à disposition gratuite de la Salle Bossuet à la Maison de l’Économie. Cette économie stratégique majeure sur le coût de location de salle a permis de réallouer nos ressources pour monter en gamme sur l'accueil des participants et la qualité des intervenants.
+
+• Organisation Logistique & Opérationnelle :
+J'ai orchestré la logistique globale : paramétrage et sécurisation de la billetterie sur Billetweb, planification des animations (photobooth, tombola d'autofinancement) et coordination du buffet de célébration pour 75 personnes, en veillant à la parfaite gestion des prestataires externes et au respect du timing de la journée.`,
+            },
+            {
+                title: "Les Défis Rencontrés : Agilité financière et diplomatie logistique",
+                content:
+                    `Le principal défi de ce projet résidait dans l'équation complexe de concilier des ambitions événementielles élevées avec un budget initial très serré. Pour sécuriser le modèle économique sans freiner l'élan de la communauté, j'ai fait preuve d'agilité en proposant d'instaurer une billetterie payante à prix abordable (5 €), une décision stratégique qui a permis d'équilibrer les comptes de manière saine et de dégager un excédent de trésorerie pour la pérennité du réseau.
+
+Sur le plan relationnel et organisationnel, coordonner les agendas de 18 professionnels en poste (Alumni venant de divers horizons) pour animer les tables rondes et la conférence a requis une communication proactive, empathique et personnalisée pour fédérer chacun autour de notre vision commune.`,
+            },
+        ],
+        results: [
+            {
+                title: "Impact concret",
+                content:
+                    "Nous avons livré un réseau structuré de A à Z avec une base de données Airtable sécurisée de plus de 600 Alumni, conforme aux exigences du RGPD et prête pour les promotions futures. L'événement de lancement a réuni 75 participants à la Salle Bossuet, propulsant le LinkedIn officiel du réseau à plus de 600 abonnés qualifiés.",
+            },
+            {
+                title: "Révélation personnelle",
+                content:
+                    "Les échanges passionnants que j'ai menés avec les Alumni lors des tables rondes et des déjeuners de réseau ont été le déclencheur de ma vocation professionnelle. Découvrir l'envers du décor du contrôle de gestion et de l'audit à travers leurs yeux a confirmé mon choix absolu de m'orienter vers un Master Finance d'entreprise en alternance.",
+            },
+            {
+                title: "Posture",
+                content:
+                    "Ce projet m'a appris qu'une gestion financière ou un suivi budgétaire rigoureux sur tableur ne mènent à rien sans une forte dimension relationnelle et humaine. C'est l'empathie, l'écoute active et la force de conviction qui fédèrent les équipes, convainquent les partenaires institutionnels et créent l'engagement d'une communauté.",
+            },
+        ],
     },
     {
         slug: "coperton-holding-assistante-direction",

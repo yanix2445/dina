@@ -95,6 +95,13 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                     className="size-28 md:size-36 rounded-[2rem] object-cover border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
                             )}
+                            {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
+                                <img
+                                    src="/alumni/logo.PNG"
+                                    alt="Alumni GEA Meaux Logo"
+                                    className="size-28 md:size-36 rounded-[2rem] object-contain border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
+                                />
+                            )}
                             
                             {/* Titre du projet (si enrichi) ou titre du poste décalé sur la droite */}
                             <div className="flex-1 text-left">
@@ -416,11 +423,88 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                              </div>
                                          )}
 
+                                         {/* Tableau de bord budgétaire */}
+                                         {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
+                                             <div className="rounded-[24px] bg-gradient-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden">
+                                                 {/* Ambient Glow */}
+                                                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#E8A4B8]/5 blur-2xl pointer-events-none" />
+                                                 
+                                                 <div className="flex items-center gap-2 mb-6">
+                                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E8A4B8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                         <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                                                     </svg>
+                                                     <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#E8A4B8]">
+                                                         Suivi Budgétaire du Projet
+                                                     </h3>
+                                                 </div>
+
+                                                 <div className="flex flex-col gap-4 text-left">
+                                                     {/* Budget Total */}
+                                                     <div className="rounded-xl bg-white/[0.03] border border-white/[0.05] p-4">
+                                                         <span className="text-[9px] font-bold uppercase tracking-wider text-neutral-400">Budget Total Récolté</span>
+                                                         <div className="flex items-baseline gap-2 mt-1">
+                                                             <span className="text-2xl font-extrabold text-[#FEFCF8]">1 353,77 €</span>
+                                                             <span className="text-[10px] font-medium text-[#E8A4B8]">+100% Autofinancé</span>
+                                                         </div>
+                                                     </div>
+
+                                                     {/* Dépenses clés */}
+                                                     <div className="flex flex-col gap-3">
+                                                         <span className="text-[9px] font-bold uppercase tracking-wider text-neutral-400">Répartition des Allocations</span>
+                                                         
+                                                         {/* Traiteur / Buffet */}
+                                                         <div className="flex flex-col gap-1.5">
+                                                             <div className="flex justify-between text-[11px] font-semibold text-[#FEFCF8]">
+                                                                 <span>Traiteur & Buffet (75 pers.)</span>
+                                                                 <span>45% (~610 €)</span>
+                                                             </div>
+                                                             <div className="h-1.5 w-full rounded-full bg-neutral-800 overflow-hidden">
+                                                                 <div className="h-full rounded-full bg-[#E8A4B8]" style={{ width: "45%" }} />
+                                                             </div>
+                                                         </div>
+
+                                                         {/* Logistique & Animations */}
+                                                         <div className="flex flex-col gap-1.5">
+                                                             <div className="flex justify-between text-[11px] font-semibold text-[#FEFCF8]">
+                                                                 <span>Logistique (Photobooth, Tombola)</span>
+                                                                 <span>35% (~473 €)</span>
+                                                             </div>
+                                                             <div className="h-1.5 w-full rounded-full bg-neutral-800 overflow-hidden">
+                                                                 <div className="h-full rounded-full bg-[#C9A84C]" style={{ width: "35%" }} />
+                                                             </div>
+                                                         </div>
+
+                                                         {/* Sonorisation / Sécurité */}
+                                                         <div className="flex flex-col gap-1.5">
+                                                             <div className="flex justify-between text-[11px] font-semibold text-[#FEFCF8]">
+                                                                 <span>Sécurité & Sonorisation</span>
+                                                                 <span>20% (~270 €)</span>
+                                                             </div>
+                                                             <div className="h-1.5 w-full rounded-full bg-neutral-800 overflow-hidden">
+                                                                 <div className="h-full rounded-full bg-neutral-400" style={{ width: "20%" }} />
+                                                             </div>
+                                                         </div>
+                                                     </div>
+
+                                                     <div className="mt-2 pt-4 border-t border-neutral-800/80 flex flex-col gap-2">
+                                                         <div className="flex items-center gap-2 text-xs text-[#9A9088]">
+                                                             <span className="size-1.5 rounded-full bg-[#E8A4B8]" />
+                                                             <span>Salle Bossuet : 0 € (Partenariat Mairie Meaux)</span>
+                                                         </div>
+                                                         <div className="flex items-center gap-2 text-xs text-[#9A9088]">
+                                                             <span className="size-1.5 rounded-full bg-[#C9A84C]" />
+                                                             <span>Actions : Marché de Noël, Vente Photos</span>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         )}
+
                                         {/* Documents & Livrables */}
                                         {experience.recommendationLetters && experience.recommendationLetters.length > 0 && (
                                             <div className="flex flex-col gap-3">
                                                 <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9A9088]">
-                                                    {experience.slug === "ruby-rose-beauty-controle-de-gestion" ? "Documents & Livrables" : "Recommandations"}
+                                                    {(experience.slug === "ruby-rose-beauty-controle-de-gestion" || experience.slug === "alumni-gea-meaux-tresoriere-fondatrice") ? "Documents & Livrables" : "Recommandations"}
                                                 </h3>
                                                 {experience.recommendationLetters.map((letter, idx) => {
                                                     const isRuby = experience.slug === "ruby-rose-beauty-controle-de-gestion";
@@ -433,8 +517,8 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                     );
 
                                                     const lowerLabel = letter.label.toLowerCase();
-                                                    if (lowerLabel.includes("rapport")) {
-                                                        docSubtitle = isRuby ? "Consulter le PDF (5.1 Mo)" : "Télécharger le document";
+                                                    if (lowerLabel.includes("rapport") || lowerLabel.includes("mémoire") || lowerLabel.includes("memoire")) {
+                                                        docSubtitle = isRuby ? "Consulter le PDF (5.1 Mo)" : lowerLabel.includes("mémoire") ? "Consulter le Mémoire (21.2 Mo)" : "Télécharger le document";
                                                         docIcon = (
                                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={deepColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -444,13 +528,24 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                                 <polyline points="10 9 9 9 8 9" />
                                                             </svg>
                                                         );
-                                                    } else if (lowerLabel.includes("soutenance") || lowerLabel.includes("pptx")) {
-                                                        docSubtitle = isRuby ? "Télécharger la soutenance (26.7 Mo)" : "Télécharger les slides";
+                                                    } else if (lowerLabel.includes("soutenance") || lowerLabel.includes("présentation") || lowerLabel.includes("presentation") || lowerLabel.includes("pptx")) {
+                                                        docSubtitle = isRuby ? "Télécharger la soutenance (26.7 Mo)" : "Consulter la Présentation (14.4 Mo)";
                                                         docIcon = (
                                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={deepColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
                                                                 <line x1="8" y1="21" x2="16" y2="21" />
                                                                 <line x1="12" y1="17" x2="12" y2="21" />
+                                                            </svg>
+                                                        );
+                                                    } else if (lowerLabel.includes("excel") || lowerLabel.includes("tableau") || lowerLabel.includes("xlsx")) {
+                                                        docSubtitle = "Télécharger le Fichier Excel (34.4 Mo)";
+                                                        docIcon = (
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={deepColor} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                                                <line x1="3" y1="9" x2="21" y2="9" />
+                                                                <line x1="9" y1="21" x2="9" y2="9" />
+                                                                <path d="M21 3v18H3V3h18Zm-2 2H5v14h14V5Z" />
+                                                                <path d="M7 7h4v2H7V7Zm0 4h10v2H7v-2Zm0 4h10v2H7v-2Z" />
                                                             </svg>
                                                         );
                                                     } else if (lowerLabel.includes("recommandation")) {
@@ -510,6 +605,91 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             </div>
                                         ))}
                                     </div>
+
+                                    {/* Présentation Vidéo : Alumni GEA Meaux */}
+                                    {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
+                                        <div className="mt-20">
+                                            <div className="mb-8 flex items-center gap-3">
+                                                <span className="h-px w-8" style={{ background: color }} />
+                                                <span className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color }}>
+                                                    Présentation Vidéo : Le Projet en Mouvement
+                                                </span>
+                                            </div>
+                                            <div className="overflow-hidden rounded-[24px] border border-neutral-200/50 bg-[#FEFCF8] shadow-md p-4">
+                                                <div className="aspect-video w-full rounded-[16px] overflow-hidden bg-[#1C1815]">
+                                                    <video
+                                                        src="/alumni/video%20du%20projet.mp4"
+                                                        controls
+                                                        className="h-full w-full object-cover"
+                                                        poster="/alumni/photo%20des%20organisateure%20jour%20j.jpg"
+                                                    />
+                                                </div>
+                                                <div className="mt-4 px-2 text-left">
+                                                    <h4 className="font-display text-sm font-bold text-[#1C1815]">Teaser & Rétrospective du Projet Alumni</h4>
+                                                    <p className="mt-1 text-xs leading-relaxed text-[#6B6058]">Découvrez l'ambiance et la dynamique de la conférence qui a réuni plus de 75 étudiants et professionnels.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* Galerie Photos : Alumni GEA Meaux */}
+                                    {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
+                                        <div className="mt-20">
+                                            <div className="mb-8 flex items-center gap-3">
+                                                <span className="h-px w-8" style={{ background: color }} />
+                                                <span className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color }}>
+                                                    Galerie Photo : Les Coulisses du Projet
+                                                </span>
+                                            </div>
+
+                                            <div className="grid gap-6 sm:grid-cols-2">
+                                                {[
+                                                    {
+                                                        src: "/alumni/image%20ariver%20inviter.png",
+                                                        title: "Étape 1 : Accueil des invités & Cocktail d'arrivée",
+                                                        desc: "Arrivée et émargement des professionnels (Alumni) et étudiants pour la conférence."
+                                                    },
+                                                    {
+                                                        src: "/alumni/entrer%20de%20la%20salle.jpg",
+                                                        title: "Étape 2 : Salle Bossuet à la Maison de l'Économie",
+                                                        desc: "La prestigieuse salle Bossuet gracieusement mise à disposition par la Mairie de Meaux."
+                                                    },
+                                                    {
+                                                        src: "/alumni/bufet.png",
+                                                        title: "Étape 3 : Buffet traiteur de célébration",
+                                                        desc: "Le somptueux buffet inclusif préparé pour les 75 participants lors des temps d'échange."
+                                                    },
+                                                    {
+                                                        src: "/alumni/photo%20des%20organisateure%20jour%20j.jpg",
+                                                        title: "Étape 4 : L'équipe d'organisation au Jour J",
+                                                        desc: "L'équipe d'étudiants organisateurs et fondateurs réunie le jour de l'événement."
+                                                    }
+                                                ].map((imgItem, idx) => (
+                                                    <div
+                                                        key={idx}
+                                                        className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
+                                                    >
+                                                        <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                            <img
+                                                                src={imgItem.src}
+                                                                alt={imgItem.title}
+                                                                className="h-full w-full object-cover"
+                                                                loading="lazy"
+                                                            />
+                                                        </div>
+                                                        <div className="p-5">
+                                                            <h4 className="font-display text-sm font-bold text-[#1C1815]">
+                                                                {imgItem.title}
+                                                            </h4>
+                                                            <p className="mt-1.5 text-xs leading-relaxed text-[#6B6058]">
+                                                                {imgItem.desc}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
 
                                     {/* Galerie Photos : Immersion au Laboratoire */}
                                     {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
