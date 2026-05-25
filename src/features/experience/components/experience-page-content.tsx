@@ -90,14 +90,14 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                             {/* Grand Logo de l'entreprise */}
                             {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
                                 <img
-                                    src="/ruby%20rose/logo.jpeg"
+                                    src="/ruby-rose/logo.jpeg"
                                     alt="Ruby Rose Logo"
                                     className="size-28 md:size-36 rounded-[2rem] object-cover border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
                             )}
                             {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
                                 <img
-                                    src="/alumni/logo.PNG"
+                                    src="/alumni/logo.png"
                                     alt="Alumni GEA Meaux Logo"
                                     className="size-28 md:size-36 rounded-[2rem] object-contain border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
                                 />
@@ -700,10 +700,10 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             <div className="overflow-hidden rounded-[24px] border border-neutral-200/50 bg-[#FEFCF8] shadow-md p-4">
                                                 <div className="aspect-video w-full rounded-[16px] overflow-hidden bg-[#1C1815]">
                                                     <video
-                                                        src="/alumni/video%20du%20projet.mp4"
+                                                        src="/alumni/video-projet.mp4"
                                                         controls
                                                         className="h-full w-full object-cover"
-                                                        poster="/alumni/photo%20des%20organisateure%20jour%20j.jpg"
+                                                        poster="/alumni/photo-organisateurs-jour-j.jpg"
                                                     />
                                                 </div>
                                                 <div className="mt-4 px-2 text-left">
@@ -727,22 +727,22 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             <div className="grid gap-6 sm:grid-cols-2">
                                                 {[
                                                     {
-                                                        src: "/alumni/image%20ariver%20inviter.png",
+                                                        src: "/alumni/image-arrivee-invites.png",
                                                         title: "Étape 1 : Accueil des invités & Cocktail d'arrivée",
                                                         desc: "Arrivée et émargement des professionnels (Alumni) et étudiants pour la conférence."
                                                     },
                                                     {
-                                                        src: "/alumni/entrer%20de%20la%20salle.jpg",
+                                                        src: "/alumni/entree-salle.jpg",
                                                         title: "Étape 2 : Salle Bossuet à la Maison de l'Économie",
                                                         desc: "La prestigieuse salle Bossuet gracieusement mise à disposition par la Mairie de Meaux."
                                                     },
                                                     {
-                                                        src: "/alumni/bufet.png",
+                                                        src: "/alumni/buffet.png",
                                                         title: "Étape 3 : Buffet traiteur de célébration",
                                                         desc: "Le somptueux buffet inclusif préparé pour les 75 participants lors des temps d'échange."
                                                     },
                                                     {
-                                                        src: "/alumni/photo%20des%20organisateure%20jour%20j.jpg",
+                                                        src: "/alumni/photo-organisateurs-jour-j.jpg",
                                                         title: "Étape 4 : L'équipe d'organisation au Jour J",
                                                         desc: "L'équipe d'étudiants organisateurs et fondateurs réunie le jour de l'événement."
                                                     }
@@ -846,22 +846,22 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                             <div className="grid gap-6 sm:grid-cols-2">
                                                 {[
                                                     {
-                                                        src: "/ruby%20rose/formulation%20etap1.jpeg",
+                                                        src: "/ruby-rose/formulation-etape-1.jpeg",
                                                         title: "Étape 1 : Pesée précise & sélection des pigments",
                                                         desc: "Sélection rigoureuse et pesée millimétrique des matières premières pour la formulation."
                                                     },
                                                     {
-                                                        src: "/ruby%20rose/formulation%20etap%202.jpeg",
+                                                        src: "/ruby-rose/formulation-etape-2.jpeg",
                                                         title: "Étape 2 : Processus de mélange thermique",
                                                         desc: "Mélange et homogénéisation à chaud sous agitation contrôlée en laboratoire."
                                                     },
                                                     {
-                                                        src: "/ruby%20rose/formulation%20etape%203.jpeg",
+                                                        src: "/ruby-rose/formulation-etape-3.jpeg",
                                                         title: "Étape 3 : Formulation cosmétique finale",
                                                         desc: "Obtention de la texture et de la teinte finale stabilisées prêtes pour le conditionnement."
                                                     },
                                                     {
-                                                        src: "/ruby%20rose/teste%20produit.jpeg",
+                                                        src: "/ruby-rose/teste-produit.jpeg",
                                                         title: "Étape 4 : Tests produits & rendu sensoriel",
                                                         desc: "Évaluation de la pigmentation, de la tenue et de la sensorialité sur le produit fini."
                                                     }

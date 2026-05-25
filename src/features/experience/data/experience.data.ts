@@ -28,9 +28,9 @@ export const experiences: Experience[] = [
         description:
             "• Mise en place de la comptabilité analytique (centres de coûts et clés de répartition)\n• Calcul des coûts de revient (RCA) pour les produits et formules cosmétiques\n• Gestion complète de la facturation et rapprochements bancaires sur Tiime\n• Coordination internationale entre l’usine en Turquie et le marketing au Brésil\n• Structuration des données techniques en lien avec le pôle R&D\n• Suivi des prix de transfert et des relations financières entre les filiales\n• Interface transversale entre la formulation, la finance et le marketing\n• Amélioration des process internes pour optimiser l’organisation",
         recommendationLetters: [
-            { label: "Lettre de Recommandation", href: "/LR-RRBF.pdf" },
-            { label: "Rapport de Stage (PDF)", href: "/ruby%20rose/Rapport%20Stage%20Dina%20RRBF.pdf" },
-            { label: "Soutenance de Stage (PPTX)", href: "/ruby%20rose/Pr%C3%A9sentation%20Rapport%20de%20Stage%20RRBF%20copie.pptx.pptx" },
+            { label: "Lettre de Recommandation", href: "/ruby-rose/lettre-recommandation-rrbf.pdf" },
+            { label: "Rapport de Stage (PDF)", href: "/ruby-rose/rapport-stage-dina-rrbf.pdf" },
+            { label: "Soutenance de Stage (PPTX)", href: "/ruby-rose/presentation-rapport-stage-rrbf.pptx" },
         ],
 
         // ── Contenu enrichi pour la page dédiée ──
@@ -105,9 +105,9 @@ Les échanges de matières premières et de formules de produits de beauté impl
         description:
             "• Création et structuration complète du réseau Alumni GEA Meaux\n• Gestion des relations institutionnelles (mairie, sponsors et partenaires)\n• Coordination du réseau et interface directe avec les anciens élèves\n• Supervision opérationnelle d’une conférence pour 100 personnes\n• Pilotage budgétaire et optimisation des ressources du projet",
         recommendationLetters: [
-            { label: "Mémoire du Projet Alumni (PDF)", href: "/alumni/M%C3%A9moire-projet-Alumni%20.pdf" },
-            { label: "Présentation du Projet Alumni (PDF)", href: "/alumni/Pr%C3%A9sentation-projet-alumni%20.pdf" },
-            { label: "Tableau de bord de Trésorerie (Excel)", href: "/alumni/Alumni%20Gea%20Meaux.xlsx" },
+            { label: "Mémoire du Projet Alumni (PDF)", href: "/alumni/memoire-projet-alumni.pdf" },
+            { label: "Présentation du Projet Alumni (PDF)", href: "/alumni/presentation-projet-alumni.pdf" },
+            { label: "Tableau de bord de Trésorerie (Excel)", href: "/alumni/alumni-gea-meaux-budget.xlsx" },
         ],
         projectTitle: "Création et structuration du réseau Alumni GEA Meaux",
         sector: "Projet Associatif & Événementiel",
@@ -230,8 +230,8 @@ Gérer ces négociations serrées avec les prestataires tout en assurant une ré
         description:
             "• Mise à jour et lettrage des comptes pour assurer la fiabilité comptable\n• Actualisation rigoureuse des bases de données et dossiers tiers\n• Gestion de la relation fournisseurs via des campagnes d\u2019appels sortants\n• Organisation et classement structuré des pièces comptables (factures, devis)\n• Pilotage et catégorisation des flux de trésorerie sur le logiciel Agicap\n• Suivi quotidien des entrées et sorties financières pour le reporting",
         recommendationLetters: [
-            { label: "Lettre de Recommandation 1", href: "/LR-Coperton.pdf" },
-            { label: "Lettre de Recommandation 2", href: "/LR2-Coperton.pdf" },
+            { label: "Lettre de Recommandation 1", href: "/coperton/lettre-recommandation-coperton-1.pdf" },
+            { label: "Lettre de Recommandation 2", href: "/coperton/lettre-recommandation-coperton-2.pdf" },
         ],
     },
 ];

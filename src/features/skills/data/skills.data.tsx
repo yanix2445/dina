@@ -74,11 +74,11 @@ export const expertises: Expertise[] = [
 ];
 
 export const certifications: Certification[] = [
-    { name: "TOEIC", date: "Obtenu", desc: "Anglais professionnel (Score : 700)", href: "/TOEIC-DinaRIANI.pdf" },
-    { name: "Score IAE Message", date: "Validé", desc: "Aptitudes pour les études de gestion (Score : 198)", href: "/SM-Dina-RIANI.pdf" },
-    { name: "Avis Poursuite d'Études", date: "Excellent", desc: "Avis de l'IUT pour la poursuite d'études", href: "/Avis-de poursuite-etudes-DinaRIANI.pdf" },
+    { name: "TOEIC", date: "Obtenu", desc: "Anglais professionnel (Score : 700)", href: "/documents/toeic.pdf" },
+    { name: "Score IAE Message", date: "Validé", desc: "Aptitudes pour les études de gestion (Score : 198)", href: "/documents/score-iae-message.pdf" },
+    { name: "Avis Poursuite d'Études", date: "Excellent", desc: "Avis de l'IUT pour la poursuite d'études", href: "/documents/avis-poursuite-etudes.pdf" },
     { name: "Certification Pix", date: "Validé", desc: "Outils numériques (Traitements de données)" },
-    { name: "CLUE-IUT-BUT GEA", date: "Certification", desc: "Compétences Langagières Universitaires", href: "/CLUE-IUT-BUT GEA-DinaRIANI.pdf" },
+    { name: "CLUE-IUT-BUT GEA", date: "Certification", desc: "Compétences Langagières Universitaires", href: "/documents/clue-iut-but-gea.pdf" },
 ];
 
 export const softSkills: string[] = [

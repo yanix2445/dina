@@ -6,7 +6,7 @@ export const projects: Project[] = [
         context: "Ruby Rose Beauty France",
         type: "Document d'analyse",
         date: "2025",
-        link: "/rapport-stage-ruby-rose.pdf",
+        link: "/ruby-rose/rapport-stage-ruby-rose.pdf",
     },
     {
         title: "Analyse Financière & Diagnostic",
