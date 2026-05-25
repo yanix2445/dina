@@ -6,14 +6,16 @@ import type { Metadata } from "next";
 type Params = { slug: string };
 
 /**
- * Génère les routes statiques pour chaque expérience à partir des slugs.
+ * Génère les routes statiques uniquement pour les expériences disposant d'un contenu détaillé.
  */
 export function generateStaticParams(): Params[] {
-    return experiences.map((exp) => ({ slug: exp.slug }));
+    return experiences
+        .filter((exp) => exp.sections && exp.sections.length > 0)
+        .map((exp) => ({ slug: exp.slug }));
 }
 
 /**
- * Génère les métadonnées SEO dynamiques pour chaque page d'expérience.
+ * Génère les métadonnées SEO dynamiques uniquement pour les pages d'expérience existantes et détaillées.
  */
 export async function generateMetadata({
     params,
@@ -22,7 +24,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
     const { slug } = await params;
     const exp = experiences.find((e) => e.slug === slug);
-    if (!exp) return {};
+    if (!exp || !exp.sections || exp.sections.length === 0) return {};
 
     return {
         title: `${exp.title} — ${exp.company}`,
@@ -31,7 +33,7 @@ export async function generateMetadata({
 }
 
 /**
- * Page dédiée affichant le détail complet d'une expérience.
+ * Page dédiée affichant le détail complet d'une expérience riche.
  */
 export default async function ExperiencePage({
     params,
@@ -41,7 +43,7 @@ export default async function ExperiencePage({
     const { slug } = await params;
     const exp = experiences.find((e) => e.slug === slug);
 
-    if (!exp) {
+    if (!exp || !exp.sections || exp.sections.length === 0) {
         notFound();
     }
 
