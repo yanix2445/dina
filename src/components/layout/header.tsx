@@ -4,11 +4,11 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-    { label: "À propos", href: "#about" },
-    { label: "Parcours", href: "#parcours" },
-    { label: "Compétences", href: "#competences" },
-    { label: "Projets", href: "#projets" },
-    { label: "Contact", href: "#contact" },
+    { label: "À propos", href: "/#about" },
+    { label: "Parcours", href: "/#parcours" },
+    { label: "Compétences", href: "/#competences" },
+    { label: "Projets", href: "/#projets" },
+    { label: "Contact", href: "/#contact" },
 ];
 
 export function Header() {
@@ -31,7 +31,7 @@ export function Header() {
         >
             <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-5">
                 {/* Monogramme */}
-                <a href="#" aria-label="Retour en haut" className="group flex items-center gap-3">
+                <a href="/" aria-label="Retour en haut" className="group flex items-center gap-3">
                     <span
                         className={cn(
                             "flex size-9 items-center justify-center rounded-full border text-[11px] font-semibold tracking-wider transition-all duration-300",
@@ -68,7 +68,7 @@ export function Header() {
                         <span>Télécharger CV</span>
                     </a>
                     <a
-                        href="#contact"
+                        href="/#contact"
                         className="rounded-full bg-[#C9A84C] px-3 py-1.5 sm:px-5 sm:py-2 text-[10px] sm:text-[12px] font-semibold tracking-wide text-white shadow-sm transition-all duration-300 hover:bg-[#9E7B30] hover:shadow-md hover:shadow-[#C9A84C]/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A84C]/50 focus-visible:ring-offset-2"
                     >
                         Me contacter
