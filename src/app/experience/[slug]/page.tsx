@@ -44,20 +44,11 @@ export async function generateMetadata({
             title: `${title} | Dina Riani`,
             description,
             siteName: "Portfolio Dina Riani",
-            images: [
-                {
-                    url: "/portrait-dina.jpg",
-                    width: 1200,
-                    height: 630,
-                    alt: `Dina Riani — ${exp.title} chez ${exp.company}`,
-                },
-            ],
         },
         twitter: {
             card: "summary_large_image",
             title: `${title} | Dina Riani`,
             description,
-            images: ["/portrait-dina.jpg"],
         },
     };
 }

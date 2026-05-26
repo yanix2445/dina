@@ -52,6 +52,12 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  alternates: {
+    canonical: "/",
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
@@ -60,21 +66,12 @@ export const metadata: Metadata = {
     description:
       "Découvrez mon parcours, mes compétences et mes projets en gestion des entreprises et administrations.",
     siteName: "Portfolio Dina Riani",
-    images: [
-      {
-        url: "/portrait-dina.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dina Riani — Portfolio BUT GEA",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dina Riani — Portfolio GEA",
     description:
       "Étudiante en BUT GEA, parcours et compétences spécialisées en finance et contrôle de gestion.",
-    images: ["/portrait-dina.jpg"],
   },
   robots: {
     index: true,
