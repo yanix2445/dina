@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -130,6 +131,11 @@ export default function RootLayout({
         />
         {children}
         <Toaster richColors position="top-right" />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="hboMMud2/1oyUGmCX6oJ1g"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
