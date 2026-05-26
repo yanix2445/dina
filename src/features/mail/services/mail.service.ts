@@ -23,7 +23,7 @@ export class MailService {
     private static fromEmail = "Dina Riani <contact@dina-riani.fr>";
     
     // L'adresse de réception (la tienne, où tu recevras les messages des visiteurs)
-    private static toEmail = "dinariani258@gmail.com";
+    private static toEmail = "contact@dina-riani.fr";
 
     /**
      * Envoie l'e-mail de contact en utilisant le SDK officiel de Resend.

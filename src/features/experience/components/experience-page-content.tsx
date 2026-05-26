@@ -92,7 +92,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                             {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
                                 <Image
                                     src="/ruby-rose/logo.jpeg"
-                                    alt="Ruby Rose Logo"
+                                    alt="Logo Ruby Rose Beauty France"
                                     width={144}
                                     height={144}
                                     sizes="(max-width: 768px) 112px, 144px"
@@ -102,7 +102,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                             {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
                                 <Image
                                     src="/alumni/logo.png"
-                                    alt="Alumni GEA Meaux Logo"
+                                    alt="Logo du projet Alumni GEA Meaux"
                                     width={144}
                                     height={144}
                                     sizes="(max-width: 768px) 112px, 144px"

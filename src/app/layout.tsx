@@ -21,17 +21,16 @@ export const viewport: Viewport = {
   themeColor: "#FEFCF8",
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://dina-riani.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://dina-riani.fr"),
   title: {
     default: "Dina Riani — Portfolio",
     template: "%s | Dina Riani",
   },
   description:
-    "Portfolio de Dina Riani, étudiante en BUT GEA à Meaux. Spécialisation en contrôle de gestion, comptabilité et conseil financier. Découvrez mon parcours, mes compétences et mes projets professionnels.",
+    "Dina Riani, étudiante en BUT GEA à Meaux spécialisée en contrôle de gestion et comptabilité. Découvrez mon parcours, mes compétences et mes projets.",
   applicationName: "Portfolio Dina Riani",
   authors: [{ name: "Dina Riani" }],
   creator: "Dina Riani",
@@ -88,6 +87,35 @@ export const metadata: Metadata = {
   },
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dina-riani.fr";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  url: siteUrl,
+  mainEntity: {
+    "@type": "Person",
+    name: "Dina Riani",
+    jobTitle: "Étudiante en BUT GEA — Contrôle de gestion",
+    description:
+      "Étudiante en BUT GEA à Meaux, spécialisée en contrôle de gestion et comptabilité, à la recherche d'une alternance en Master dès septembre 2026.",
+    url: siteUrl,
+    image: `${siteUrl}/portrait-dina.jpg`,
+    email: "contact@dina-riani.fr",
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "IUT de Meaux",
+    },
+    knowsAbout: [
+      "Contrôle de gestion",
+      "Comptabilité",
+      "Finance",
+      "Gestion des Entreprises et des Administrations",
+    ],
+    sameAs: ["https://www.linkedin.com/in/dina-rianii/"],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -96,6 +124,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={cn(dmSans.variable, playfair.variable)}>
       <body className={cn("antialiased")}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <Toaster richColors position="top-right" />
       </body>

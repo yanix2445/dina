@@ -26,9 +26,39 @@ export async function generateMetadata({
     const exp = experiences.find((e) => e.slug === slug);
     if (!exp || !exp.sections || exp.sections.length === 0) return {};
 
+    const title = `${exp.title} — ${exp.company}`;
+    const description = `Découvrez mon expérience en tant que ${exp.title} chez ${exp.company}. ${exp.period}.`;
+    const url = `/experience/${exp.slug}`;
+
     return {
-        title: `${exp.title} — ${exp.company}`,
-        description: `Découvrez mon expérience en tant que ${exp.title} chez ${exp.company}. ${exp.period}.`,
+        title,
+        description,
+        keywords: exp.keywords,
+        alternates: {
+            canonical: url,
+        },
+        openGraph: {
+            type: "article",
+            locale: "fr_FR",
+            url,
+            title: `${title} | Dina Riani`,
+            description,
+            siteName: "Portfolio Dina Riani",
+            images: [
+                {
+                    url: "/portrait-dina.jpg",
+                    width: 1200,
+                    height: 630,
+                    alt: `Dina Riani — ${exp.title} chez ${exp.company}`,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${title} | Dina Riani`,
+            description,
+            images: ["/portrait-dina.jpg"],
+        },
     };
 }
 

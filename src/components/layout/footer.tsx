@@ -9,7 +9,7 @@ const links = {
     ],
     contact: [
         { label: "LinkedIn", href: "https://www.linkedin.com/in/dina-rianii/" },
-        { label: "Email", href: "mailto:dinariani258@gmail.com" },
+        { label: "Email", href: "mailto:contact@dina-riani.fr" },
         { label: "Curriculum Vitae", href: "/documents/cv-dina-riani-alternance.pdf" },
     ]
 };
