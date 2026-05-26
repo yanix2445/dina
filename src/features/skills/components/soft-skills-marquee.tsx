@@ -4,10 +4,10 @@ export function SoftSkillsMarquee({ softSkills }: { softSkills: string[] }) {
         <div className="relative mb-24 flex w-full flex-col">
             
             {/* Dégradé blanc/transparent à GAUCHE pour un effet d'apparition en douceur */}
-            <div className="absolute left-0 top-0 bottom-0 z-10 w-24 bg-gradient-to-r from-[#FAFAF9] to-transparent pointer-events-none" />
+            <div className="absolute left-0 top-0 bottom-0 z-10 w-24 bg-linear-to-r from-[#FAFAF9] to-transparent pointer-events-none" />
             
             {/* Dégradé blanc/transparent à DROITE pour un effet de disparition en douceur */}
-            <div className="absolute right-0 top-0 bottom-0 z-10 w-24 bg-gradient-to-l from-[#FAFAF9] to-transparent pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 z-10 w-24 bg-linear-to-l from-[#FAFAF9] to-transparent pointer-events-none" />
 
             {/* Zone de masquage : cache tout ce qui dépasse visuellement de l'écran */}
             <div className="flex w-full overflow-hidden">

@@ -41,12 +41,12 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                     {/* Blobs décoratifs */}
                     <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full opacity-20 blur-[120px] select-none"
+                        className="pointer-events-none absolute -top-40 -right-40 h-125 w-125 rounded-full opacity-20 blur-[120px] select-none"
                         style={{ background: `radial-gradient(circle, ${color}, transparent 70%)` }}
                     />
                     <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute -bottom-32 -left-32 h-[400px] w-[400px] rounded-full opacity-15 blur-[100px] select-none"
+                        className="pointer-events-none absolute -bottom-32 -left-32 h-100 w-100 rounded-full opacity-15 blur-[100px] select-none"
                         style={{ background: `radial-gradient(circle, ${isPro ? "#EDE5D8" : "#F5D6E2"}, transparent 70%)` }}
                     />
 
@@ -110,7 +110,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                 />
                             )}
                             {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
-                                <div className="size-28 md:size-36 rounded-[2rem] border border-neutral-200/80 shadow-xl bg-gradient-to-br from-[#0D9488] to-[#0F766E] p-1 flex items-center justify-center shrink-0">
+                                <div className="size-28 md:size-36 rounded-[2rem] border border-neutral-200/80 shadow-xl bg-linear-to-br from-[#0D9488] to-[#0F766E] p-1 flex items-center justify-center shrink-0">
                                     <div className="flex flex-col items-center justify-center text-white">
                                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-1.5 animate-pulse text-[#E8A4B8]">
                                             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
@@ -289,7 +289,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
 
                                          {/* Infographie triangle France-Brésil-Turquie */}
                                          {experience.slug === "ruby-rose-beauty-controle-de-gestion" && (
-                                             <div className="rounded-[24px] bg-gradient-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden">
+                                             <div className="rounded-[24px] bg-linear-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden">
                                                  {/* Ambient Glow */}
                                                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#C9A84C]/5 blur-2xl pointer-events-none" />
                                                  
@@ -442,7 +442,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
 
                                          {/* Tableau de bord budgétaire */}
                                          {experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" && (
-                                             <div className="rounded-[24px] bg-gradient-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden">
+                                             <div className="rounded-[24px] bg-linear-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden">
                                                  {/* Ambient Glow */}
                                                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#E8A4B8]/5 blur-2xl pointer-events-none" />
                                                  
@@ -457,7 +457,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
 
                                                  <div className="flex flex-col gap-4 text-left">
                                                      {/* Budget Total */}
-                                                     <div className="rounded-xl bg-white/[0.03] border border-white/[0.05] p-4">
+                                                     <div className="rounded-xl bg-white/3 border border-white/5 p-4">
                                                          <span className="text-[9px] font-bold uppercase tracking-wider text-neutral-400">Budget Total Récolté</span>
                                                          <div className="flex items-baseline gap-2 mt-1">
                                                              <span className="text-2xl font-extrabold text-[#FEFCF8]">1 353,77 €</span>
@@ -519,7 +519,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
 
                                           {/* Infographie d'impact caritatif (SFTS) */}
                                           {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
-                                              <div className="rounded-[24px] bg-gradient-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden text-left">
+                                              <div className="rounded-[24px] bg-linear-to-br from-[#1C1815] to-[#25201C] p-6 border border-neutral-800 shadow-xl relative overflow-hidden text-left">
                                                   {/* Ambient Glow */}
                                                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#0D9488]/5 blur-2xl pointer-events-none" />
                                                   
@@ -528,14 +528,14 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                           <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                                       </svg>
                                                       <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0D9488]">
-                                                          Infographie d'Impact
+                                                          Infographie d&apos;Impact
                                                       </h3>
                                                   </div>
 
                                                   <div className="flex flex-col gap-6 relative">
                                                       {/* L'achat de billet */}
                                                       <div className="flex items-start gap-4">
-                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.03] border border-white/[0.05] text-[#E8A4B8] shadow-xs">
+                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/3 border border-white/5 text-[#E8A4B8] shadow-xs">
                                                               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                                   <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
                                                               </svg>
@@ -547,11 +547,11 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                       </div>
 
                                                       {/* Connecteur vertical */}
-                                                      <div className="absolute left-5 top-10 bottom-6 w-0.5 bg-gradient-to-b from-[#E8A4B8] to-[#0D9488]" />
+                                                      <div className="absolute left-5 top-10 bottom-6 w-0.5 bg-linear-to-b from-[#E8A4B8] to-[#0D9488]" />
 
                                                       {/* L'impact en soins */}
                                                       <div className="flex items-start gap-4 z-10">
-                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/[0.03] border border-white/[0.05] text-[#0D9488] shadow-xs">
+                                                          <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white/3 border border-white/5 text-[#0D9488] shadow-xs">
                                                               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                                                   <path d="m12 3-1.912 5.886H3.873l4.947 3.596L6.908 18.37 12 14.774l5.092 3.596-1.912-5.002 4.947-3.596h-6.215Z" />
                                                               </svg>
@@ -567,7 +567,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
 
                                           {/* Encadré Négociation Artistique (SFTS) */}
                                           {experience.slug === "sfts-evenementiel-logistique-caritatif" && (
-                                              <div className="rounded-[24px] p-6 border transition-all duration-300 text-left bg-gradient-to-br from-[#FEFCF8] to-[#FFF9FA]" style={{ borderColor: `${color}40` }}>
+                                              <div className="rounded-[24px] p-6 border transition-all duration-300 text-left bg-linear-to-br from-[#FEFCF8] to-[#FFF9FA]" style={{ borderColor: `${color}40` }}>
                                                   <div className="flex items-center gap-2 mb-4">
                                                       <div className="size-2 rounded-full" style={{ background: color }} />
                                                       <h3 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#1C1815]">Focus Négociation</h3>
@@ -583,7 +583,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                       </div>
                                                       <p className="text-xs font-semibold text-[#1C1815] leading-relaxed">Convaincre & Fédérer</p>
                                                       <p className="text-xs text-[#6B6058] leading-relaxed">
-                                                          Capacité à mener des négociations complexes avec des artistes et managers (production, logistique et cachets) afin d'assurer leur prestation bénévole lors des galas et maximiser ainsi la marge nette réinjectée dans les soins.
+                                                          Capacité à mener des négociations complexes avec des artistes et managers (production, logistique et cachets) afin d&apos;assurer leur prestation bénévole lors des galas et maximiser ainsi la marge nette réinjectée dans les soins.
                                                       </p>
                                                   </div>
                                               </div>
@@ -715,7 +715,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                 </div>
                                                 <div className="mt-4 px-2 text-left">
                                                     <h4 className="font-display text-sm font-bold text-[#1C1815]">Teaser & Rétrospective du Projet Alumni</h4>
-                                                    <p className="mt-1 text-xs leading-relaxed text-[#6B6058]">Découvrez l'ambiance et la dynamique de la conférence qui a réuni plus de 75 étudiants et professionnels.</p>
+                                                    <p className="mt-1 text-xs leading-relaxed text-[#6B6058]">Découvrez l&apos;ambiance et la dynamique de la conférence qui a réuni plus de 75 étudiants et professionnels.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -758,7 +758,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                         key={idx}
                                                         className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                     >
-                                                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                        <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-100">
                                                             <Image
                                                                 src={imgItem.src}
                                                                 alt={imgItem.title}
@@ -818,7 +818,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                          key={idx}
                                                          className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                      >
-                                                         <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                         <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-100">
                                                              <Image
                                                                  src={imgItem.src}
                                                                  alt={imgItem.title}
@@ -878,7 +878,7 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                         key={idx}
                                                         className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
                                                     >
-                                                        <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+                                                        <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-100">
                                                             <Image
                                                                 src={imgItem.src}
                                                                 alt={imgItem.title}

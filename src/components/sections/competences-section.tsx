@@ -24,7 +24,7 @@ export function CompetencesSection() {
                         Savoir-Faire & Savoir-Être
                     </h2>
                     <p className="max-w-xl text-sm leading-relaxed text-[#6B6058]">
-                        Des compétences transversales acquises au fil de la formation pour intervenir concrètement sur la tenue comptable, l'aide à la décision financière et l'organisation de l'entreprise.
+                        Des compétences transversales acquises au fil de la formation pour intervenir concrètement sur la tenue comptable, l&apos;aide à la décision financière et l&apos;organisation de l&apos;entreprise.
                     </p>
                 </div>
 

@@ -9,7 +9,7 @@ export function AboutSection() {
                     {/* Colonne gauche — Visuel */}
                     <div className="relative">
                         {/* Cadre décoratif */}
-                        <div className="relative h-[480px]">
+                        <div className="relative h-120">
                             {/* Layer 1 — Carré or, décalé derrière */}
                             <div className="absolute top-6 left-6 h-full w-full rounded-2xl bg-[#F5EDD6]" />
 
@@ -68,19 +68,19 @@ export function AboutSection() {
 
                         <div className="space-y-4 text-base leading-relaxed text-neutral-500">
                             <p>
-                                Bientôt diplômée d'un BUT GEA, je me suis formée aux disciplines
-                                fondamentales de la gestion d'entreprise : comptabilité, analyse
+                                Bientôt diplômée d&apos;un BUT GEA, je me suis formée aux disciplines
+                                fondamentales de la gestion d&apos;entreprise : comptabilité, analyse
                                 financière, droit des affaires et contrôle de gestion.
                             </p>
                             <p>
                                 Mon approche est à la fois analytique et humaine. Je crois que
                                 la rigueur technique et la communication claire sont les deux
-                                piliers d'une gestion efficace.
+                                piliers d&apos;une gestion efficace.
                             </p>
                         </div>
 
                         {/* Séparateur */}
-                        <div className="h-px w-full bg-gradient-to-r from-[#C9A84C]/30 via-[#E8A4B8]/30 to-transparent" />
+                        <div className="h-px w-full bg-linear-to-r from-[#C9A84C]/30 via-[#E8A4B8]/30 to-transparent" />
 
                         {/* Stats */}
                         <div className="grid grid-cols-3 gap-4">

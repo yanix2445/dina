@@ -41,7 +41,7 @@ export function ExpertiseCard({ exp, index }: { exp: Expertise; index: number })
                         className="flex items-start gap-3 group/item"
                     >
                         {/* Petite puce (carré tourné à 45° pour faire un losange). S'agrandit au survol de la ligne. */}
-                        <span className="mt-1.5 size-1.5 flex-shrink-0 rotate-45 bg-[#C9A84C] transition-transform group-hover/item:scale-125" />
+                        <span className="mt-1.5 size-1.5 shrink-0 rotate-45 bg-[#C9A84C] transition-transform group-hover/item:scale-125" />
                         
                         {/* Nom de la compétence (ex: React, Node.js). Le texte fonce légèrement au survol de la carte globale. */}
                         <span className="text-sm font-medium text-[#6B6058] transition-colors group-hover:text-[#1C1815]">

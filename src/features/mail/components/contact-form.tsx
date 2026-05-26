@@ -28,7 +28,7 @@ export function ContactForm() {
     // Affichage alternatif : Message de succès si le formulaire a été envoyé
     if (showSuccess) {
         return (
-            <div className="flex h-full min-h-[450px] flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#1C1815]/5 transition-opacity animate-in fade-in duration-500">
+            <div className="flex h-full min-h-112.5 flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#1C1815]/5 transition-opacity animate-in fade-in duration-500">
                 <span className="flex size-20 items-center justify-center rounded-full bg-[#F5EDD6] text-3xl">
                     ✨
                 </span>
@@ -129,7 +129,7 @@ export function ContactForm() {
                     className="mt-1 size-4 rounded border-[#E8D5A3] text-[#C9A84C] focus:ring-[#C9A84C]"
                 />
                 <label htmlFor="gdpr-consent" className="text-[10px] leading-relaxed text-[#9A9088]">
-                    En envoyant ce formulaire, j'accepte que mes données soient traitées par Dina Riani pour répondre à ma demande, conformément à la politique de confidentialité.
+                    En envoyant ce formulaire, j&apos;accepte que mes données soient traitées par Dina Riani pour répondre à ma demande, conformément à la politique de confidentialité.
                 </label>
             </div>
 

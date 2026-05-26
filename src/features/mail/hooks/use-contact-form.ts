@@ -60,10 +60,10 @@ export function useContactForm() {
             
             return true; // Retourne "true" pour indiquer au composant qu'il peut vider ses champs
             
-        } catch (err: any) {
+        } catch (err: unknown) {
             // Gestion des erreurs réseau (ex: plus d'Internet ou blocage CORS)
             toast.error("Erreur réseau", {
-                description: err.message || "Impossible de contacter le serveur."
+                description: err instanceof Error ? err.message : "Impossible de contacter le serveur."
             });
             return false;
         } finally {

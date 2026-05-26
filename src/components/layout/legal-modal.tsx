@@ -36,7 +36,7 @@ export function LegalModal() {
                         <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9A84C] mb-3 opacity-80">Conception & Développement</h3>
                         <p className="text-base font-bold text-[#1C1815]">Harrat Yanis — Black Rise</p>
                         <p className="text-sm">SIREN : 919 266 668 | SIRET : 919 266 668 00020</p>
-                        <p className="text-sm">15 ALLEE des Demoiselles d'Avignon, 92000 Nanterre</p>
+                        <p className="text-sm">15 ALLEE des Demoiselles d&apos;Avignon, 92000 Nanterre</p>
                         <p className="text-sm italic">Programmation informatique (6201Z)</p>
                     </section>
 
@@ -48,19 +48,19 @@ export function LegalModal() {
                     </section>
 
                     <section className="pt-4 border-t border-[#1C1815]/5">
-                        <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9A84C] mb-3 opacity-80">Droits d'Auteur</h3>
+                        <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9A84C] mb-3 opacity-80">Droits d&apos;Auteur</h3>
                         <p className="text-[13px]">
-                            L'ensemble des contenus présents sur ce site (textes, images, structure) appartient exclusivement à <span className="font-bold text-[#1C1815]">Dina Riani</span>, sauf mention contraire. Toute reproduction ou représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l'autorisation expresse de l'éditeur, est interdite.
+                            L&apos;ensemble des contenus présents sur ce site (textes, images, structure) appartient exclusivement à <span className="font-bold text-[#1C1815]">Dina Riani</span>, sauf mention contraire. Toute reproduction ou représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l&apos;autorisation expresse de l&apos;éditeur, est interdite.
                         </p>
                     </section>
 
                     <section>
                         <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C9A84C] mb-3 opacity-80">Protection des données</h3>
                         <p className="text-[13px] mb-3">
-                            Conformément au RGPD, aucune donnée personnelle n'est collectée à des fins commerciales. Les informations partagées via les formulaires de contact sont conservées pour une durée maximale de <span className="font-bold text-[#1C1815]">3 ans</span> à compter du dernier contact.
+                            Conformément au RGPD, aucune donnée personnelle n&apos;est collectée à des fins commerciales. Les informations partagées via les formulaires de contact sont conservées pour une durée maximale de <span className="font-bold text-[#1C1815]">3 ans</span> à compter du dernier contact.
                         </p>
                         <p className="text-[13px]">
-                            Vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Pour toute réclamation, vous pouvez contacter la <a href="https://www.cnil.fr" target="_blank" className="font-bold text-[#1C1815] hover:underline">CNIL</a>.
+                            Vous disposez d&apos;un droit d&apos;accès, de rectification et d&apos;effacement de vos données. Pour toute réclamation, vous pouvez contacter la <a href="https://www.cnil.fr" target="_blank" className="font-bold text-[#1C1815] hover:underline">CNIL</a>.
                         </p>
                     </section>
                 </div>
