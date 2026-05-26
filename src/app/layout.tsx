@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -132,6 +133,7 @@ export default function RootLayout({
         {children}
         <Toaster richColors position="top-right" />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
