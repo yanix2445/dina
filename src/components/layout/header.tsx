@@ -25,7 +25,7 @@ export function Header() {
             className={cn(
                 "fixed inset-x-0 top-0 z-50 transition-all duration-500",
                 scrolled
-                    ? "bg-white/95 backdrop-blur-md shadow-[0_1px_0_0_#C9A84C30]"
+                    ? "bg-white/95 shadow-[0_1px_0_0_#C9A84C30]"
                     : "bg-transparent"
             )}
         >

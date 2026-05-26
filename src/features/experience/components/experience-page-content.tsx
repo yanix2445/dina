@@ -41,12 +41,12 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                     {/* Blobs décoratifs */}
                     <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute -top-40 -right-40 h-125 w-125 rounded-full opacity-20 blur-[120px] select-none"
+                        className="pointer-events-none absolute -top-40 -right-40 h-125 w-125 rounded-full opacity-20 select-none"
                         style={{ background: `radial-gradient(circle, ${color}, transparent 70%)` }}
                     />
                     <div
                         aria-hidden="true"
-                        className="pointer-events-none absolute -bottom-32 -left-32 h-100 w-100 rounded-full opacity-15 blur-[100px] select-none"
+                        className="pointer-events-none absolute -bottom-32 -left-32 h-100 w-100 rounded-full opacity-15 select-none"
                         style={{ background: `radial-gradient(circle, ${isPro ? "#EDE5D8" : "#F5D6E2"}, transparent 70%)` }}
                     />
 

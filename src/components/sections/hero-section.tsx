@@ -7,14 +7,14 @@ export function HeroSection() {
             {/* Blob or — haut droit */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -top-32 -right-32 h-150 w-150 rounded-full opacity-25 blur-[120px] select-none"
+                className="pointer-events-none absolute -top-32 -right-32 h-150 w-150 rounded-full opacity-25 select-none"
                 style={{ background: "radial-gradient(circle, #C9A84C, transparent 70%)" }}
             />
 
             {/* Blob crème/sable — bas gauche (plus neutral qu'un blob rose) */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -bottom-40 -left-40 h-150 w-150 rounded-full opacity-40 blur-[130px] select-none"
+                className="pointer-events-none absolute -bottom-40 -left-40 h-150 w-150 rounded-full opacity-40 select-none"
                 style={{ background: "radial-gradient(circle, #EDE5D8, transparent 70%)" }}
             />
 
