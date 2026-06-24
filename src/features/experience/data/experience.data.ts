@@ -9,6 +9,72 @@ export const experiences: Experience[] = [
         company: "Wiame Groupe",
         description:
             "• Élaboration de procédures internes pour structurer les méthodes de travail\n• Création et pilotage de tableaux de bord pour le suivi de l\u2019activité\n• Consolidation de données financières et analyse mensuelle des résultats\n• Participation aux clôtures mensuelles et saisie comptable des provisions\n• Calcul des prix de revient et optimisation des processus existants\n• Analyse des écarts pour l\u2019aide à la décision de la direction\n• Contribution à la révision budgétaire et analyse des prévisions\n• Revue des immobilisations pour garantir la conformité du registre",
+
+        recommendationLetters: [
+            { label: "Rapport de Stage (PDF)", href: "/wiame/rapport-stage-dina-wiame.pdf" },
+            { label: "Soutenance de Stage (PPTX)", href: "/wiame/presentation-rapport-stage-wiame.pptx" },
+        ],
+
+        // ── Contenu enrichi pour la page dédiée ──
+        projectTitle: "Pilotage centralisé de la performance financière d'un groupe TP multi-sociétés",
+        sector: "Travaux Publics (TP) (VRD, Enrobés, Terrassement)",
+        tools: ["Sage (Comptabilité)", "ADCI (Analytique)", "Excel (TCD avancés)", "MyReport (Reporting)"],
+        keywords: ["Contrôle de gestion", "Cut-off mensuel", "FNP / CCA", "Harmonisation PCG", "Pilotage budgétaire", "Aide à la décision"],
+        sections: [
+            {
+                title: "Le Contexte : ETI intégrée face aux enjeux du secteur TP",
+                content:
+                    `Le Groupe Wiame est une Entreprise de Taille Intermédiaire (ETI) familiale et indépendante d'environ 400 salariés pour un chiffre d'affaires consolidé de 60 à 80 millions d'euros. Le groupe maîtrise toute sa chaîne de valeur à travers plusieurs entités distinctes :
+• Wiame VRD (l'entité principale basée à Sept-Sorts, CA 45-55M€, construction de routes et réseaux, accueillant le siège et mon service financier).
+• Probinord (usine spécialisée dans la fabrication de liants et d'enrobés coulés à froid basée à Méréville).
+• Wiame AXE (signalisation routière et mobilier urbain basé à Vaux-le-Pénil).
+
+Aujourd'hui, le secteur des Travaux Publics traverse une période de fortes turbulences. Sur le plan commercial, nous faisons face à une contraction des commandes, couplée à une violente crise inflationniste causée par les tensions géopolitiques mondiales. Concrètement, cela provoque une flambée de nos coûts d'exploitation : le prix du gasoil pour nos engins explose, tout comme le coût du bitume, dérivé du pétrole indispensable pour nos enrobés. En plus de ces défis, le marché français de la construction routière est historiquement très clivé. On y trouve d'un côté les « Majors » du CAC 40 (Colas, Eiffage) qui raflent les immenses infrastructures, et de l'autre, de plus petites structures régionales souvent très dépendantes de leurs fournisseurs.
+
+Face à cela, le Groupe Wiame se positionne comme un véritable « outsider de taille critique ». Sa force de frappe repose sur une stratégie d'intégration verticale. Contrairement à ses concurrents locaux, le groupe ne dépend de personne : il produit ses propres matériaux (centrales d'enrobés de Wiame VRD et Probinord) et possède sa propre flotte d'engins, entretenue en interne dans un immense atelier mécanique de 3 700 m². Il se distingue aussi par l'innovation technique (enrobeur projeteur) et favorise l'économie circulaire (rabotage et recyclage de routes). C'est au cœur financier de cette structure très intégrée que j'ai évolué.`,
+            },
+            {
+                title: "Mes Missions : Fiabilisation, Modélisation et Pilotage Budgétaire",
+                content:
+                    `C'est dans ce contexte très dynamique que j'ai pris mes fonctions au siège. Ma particularité a été d'occuper un poste centralisé d'une grande transversalité : je gérais simultanément les données financières de Wiame VRD, de Probinord et de Wiame AXE. Mes missions se sont articulées autour de quatre grands pôles, allant de la fiabilité comptable pure jusqu'à l'accompagnement stratégique :
+
+1. Fiabilisation comptable et sécurisation du « Cut-off » (Sage) : Dans notre secteur, le coût des matériaux fluctue tellement qu'il est impératif d'avoir un résultat exact à chaque fin de mois. J'ai pris part, sur le logiciel Sage, aux travaux de clôture en gérant les provisions (FNP et CCA). Pour surmonter mes difficultés initiales face à la logique comptable, j'ai arrêté de penser "comptabilité" pour penser "chantier", en me connectant à la réalité physique : une tonne d'enrobés livrée mais non facturée, c'est cela, une vraie FNP.
+
+2. Harmonisation des SI et traçabilité : J'ai mené un gros travail de fond en pilotant l'harmonisation du Plan de Comptes Général (PCG) pour nos trois sociétés, qui utilisaient jusqu'ici leurs propres codes historiques. J'ai aussi restructuré notre matrice d'extraction du Grand Livre sur Excel, en y intégrant une "piste d'audit" horodatée pour tracer et justifier chaque modification manuelle.
+
+3. Modélisation analytique & Reporting (ADCI & MyReport) : Une fois ces données sécurisées, ma mission la plus stratégique a été de les traduire en outils d'aide à la décision. J'ai refondu l'architecture analytique de notre usine Probinord sur ADCI (suppression des « faux chantiers » au profit de codes analytiques clairs) et automatisé des tableaux de bord croisés dynamiques via Excel et MyReport.
+
+4. Pilotage budgétaire & Posture de Conseil : La dimension managériale s'est révélée lors de la révision budgétaire de mi-exercice (mars). J'ai accompagné individuellement les responsables de services (RH, QSE, Atelier mécanique). Pour être légitime face à des cadres expérimentés ne parlant pas le "jargon comptable", je ne me suis pas positionnée en "contrôleur", mais en "partenaire" : j'ai conçu des tableaux très visuels avec codes couleurs et organisé des entretiens pédagogiques, créant notamment un fichier sur-mesure de prévision des heures d'engins pour l'atelier mécanique.`,
+            },
+            {
+                title: "Focus Projet : Assainir la facturation interne du Petit Matériel (PM)",
+                content:
+                    `J'en arrive au cœur de mon expertise technique, à travers un projet majeur mené sur la facturation interne de notre Petit Matériel (PM : pilonneuses, carotteuses, étais, etc.) gérée dans l'ERP ADCI. La réservation d'un outil à l'atelier déclenche une facturation interne visant à imputer le coût sur le chantier et à générer un chiffre d'affaires analytique pour évaluer la rentabilité de l'atelier.
+
+• Le Diagnostic : Lors de mes analyses, j'ai identifié une anomalie importante. L'ERP utilisait deux unités : un tarif journalier (sur la base de 8 heures) et un tarif horaire. Prenons l'exemple concret d'une carotteuse : son prix de location journalier était paramétré à 35 € (soit 4,37 €/h), mais le tarif horaire appliqué informatiquement était de 5 €. Cette rupture de proportionnalité, multipliée par des centaines de locations quotidiennes, faussait totalement nos coûts réels et rendait l'analyse de rentabilité de l'atelier impossible.
+
+• La Solution Technique : J'ai extrait la totalité des tarifs de l'ERP vers Excel, en utilisant le "numéro de parc" comme clé primaire, et j'ai construit une matrice de contrôle. J'ai utilisé la fonction RECHERCHEV pour aligner sur une même ligne le prix de location et le prix de vente divisé par 8. J'ai intégré un test logique booléen : =(Prix de vente / 8 = Prix de location) pour isoler instantanément les anomalies (cellules affichant FAUX).
+
+• Dialogue Terrain & Import en masse : Je savais qu'il était risqué de modifier aveuglément les tarifs depuis mon bureau. Je suis donc allée consulter les responsables de l'atelier PM. En discutant avec eux, j'ai appris une subtilité métier : certains équipements achetés définitivement pour des équipes spécifiques ne devaient avoir aucun tarif. Sans cet échange, j'aurais laissé l'ERP générer un chiffre d'affaires totalement fictif ! Après ce dialogue indispensable, j'ai formaté ma matrice Excel et j'ai procédé à un import en masse sécurisé dans notre ERP. Les conducteurs de travaux ont désormais la garantie d'une facturation juste.`,
+            },
+        ],
+        results: [
+            {
+                title: "Bilan concret & Apprentissages",
+                content:
+                    "J'ai compris que la théorie universitaire trouve parfois ses limites face à la complexité du terrain. Le contrôle de gestion ne se fait pas uniquement derrière un écran : un bon outil financier n'a de véritable valeur que s'il est compris, accepté et utile aux équipes opérationnelles qui l'utilisent au quotidien.",
+            },
+            {
+                title: "Évolution de ma Posture",
+                content:
+                    "En allant chercher l'information à la source et en dialoguant avec les parties prenantes, j'ai réussi à dépasser la posture d'exécutante de ma deuxième année pour adopter une véritable logique de conseil et d'amélioration continue. J'ai appris à être pédagogue et à me positionner en partenaire auprès de cadres expérimentés.",
+            },
+            {
+                title: "Poursuite d'études & Embauche",
+                content:
+                    "L'aboutissement de ce stage confirme pleinement mon projet professionnel : j'intègre à la rentrée le Master Management, Contrôle de Gestion et Audit Organisationnel à l'IAE de Paris-Saclay. Concrétisation ultime, le Groupe Wiame m'a renouvelé sa confiance en m'embauchant en alternance avec pour mission de piloter le contrôle de gestion de leur vaste atelier mécanique de 3 700 m² !",
+            },
+        ],
     },
     {
         slug: "bde-iut-meaux-tresoriere",

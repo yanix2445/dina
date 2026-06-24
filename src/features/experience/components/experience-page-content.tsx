@@ -1,10 +1,162 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Experience } from "../types/experience.types";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+
+type MissionKey = "strategie" | "harmonisation" | "fiabilisation" | "outils";
+
+function MissionsOrganigrammeWiame() {
+    const [selectedMission, setSelectedMission] = useState<MissionKey>("strategie");
+
+    const missions: Record<MissionKey, { title: string; subtitle: string; desc: string; tools: string[]; metric: string; metricLabel: string }> = {
+        strategie: {
+            title: "Aide à la Décision",
+            subtitle: "Compétence 2 du PN - « Aider à la prise de décision »",
+            desc: "Accompagnement individuel des responsables de services (RH, QSE, Atelier mécanique) pour analyser leurs écarts de budget, avec une posture de partenaire de conseil plutôt que de simple contrôleur.",
+            tools: ["MyReport", "Excel", "ADCI"],
+            metric: "Révision Mars",
+            metricLabel: "menée avec les opérationnels"
+        },
+        harmonisation: {
+            title: "Parties Prenantes",
+            subtitle: "Compétence 3 du PN - « Piloter les relations avec les parties prenantes »",
+            desc: "Dialogue et validation avec le terrain (les responsables d'atelier PM) pour ajuster les tarifs financiers réels de l'ERP ADCI et éviter de facturer des équipements achetés définitivement.",
+            tools: ["Matrice Excel", "ERP ADCI"],
+            metric: "Dialogue Terrain",
+            metricLabel: "pour une facturation interne juste"
+        },
+        fiabilisation: {
+            title: "Outils de Contrôle",
+            subtitle: "Compétence 4 du PN - « Concevoir des outils de contrôle de gestion »",
+            desc: "Détection d'une rupture de proportionnalité dans les tarifs horaires/journaliers de l'ERP ADCI, création d'une matrice Excel (RECHERCHEV + test booléen) et import de corrections en masse.",
+            tools: ["Excel Avancé", "RECHERCHEV", "Clé primaire"],
+            metric: "1 ERP (ADCI)",
+            metricLabel: "assaini et fiabilisé à 100%"
+        },
+        outils: {
+            title: "Outils de Pilotage",
+            subtitle: "Compétence 5 du PN - « Concevoir des outils de contrôle de gestion »",
+            desc: "Garantie de la fiabilité de la donnée financière mensuelle (Cut-off, FNP, CCA) sur Sage en se connectant aux réalités physiques du terrain (ex: tonne d'enrobés livrée non facturée).",
+            tools: ["Sage", "Excel", "Piste d'audit"],
+            metric: "Cut-off & PCG",
+            metricLabel: "mensuel sécurisé et harmonisé"
+        }
+    };
+
+    return (
+        <div className="rounded-[24px] bg-[#FEFCF8] p-5 md:p-6 border border-[#C9A84C]/30 relative overflow-hidden shadow-xl transition-all duration-300">
+            <style>{`
+                @keyframes mission-fade {
+                    from { opacity: 0; transform: translateY(6px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .animate-mission-fade {
+                    animation: mission-fade 0.3s ease-out forwards;
+                }
+            `}</style>
+            
+            {/* Background watermark/logo outline */}
+            <div className="absolute inset-0 bg-[radial-gradient(#C9A84C_0.8px,transparent_0.8px)] [background-size:16px_16px] opacity-15 pointer-events-none" />
+
+            <div className="relative z-10 flex flex-col items-center text-center pb-4 mb-4 border-b border-dashed border-[#C9A84C]/30">
+                <span className="text-[10px] font-extrabold uppercase tracking-[0.25em] text-[#C9A84C] mb-1">
+                    Organigramme de Mission
+                </span>
+                <span className="font-display text-lg font-bold text-[#1C1815]">Cartographie du Poste Centralisé</span>
+                <span className="text-[9px] text-[#6B6058] mt-0.5">Interaction des 4 pôles de compétences</span>
+            </div>
+
+            {/* Tree View Layout */}
+            <div className="relative z-10 flex flex-col gap-4 mb-5">
+                {/* Central Hub: Dina */}
+                <div className="flex justify-center">
+                    <div className="bg-[#1C1815] text-[#FEFCF8] px-5 py-2.5 rounded-2xl border border-[#C9A84C]/30 text-center shadow-md">
+                        <span className="text-[9px] font-bold uppercase tracking-wider block text-[#C9A84C]">Poste Centralisé</span>
+                        <span className="text-[11px] font-extrabold">Assistante Contrôle de Gestion</span>
+                    </div>
+                </div>
+
+                {/* Connection lines */}
+                <div className="relative flex justify-center -my-2 h-4">
+                    <div className="w-[2px] bg-[#C9A84C]/30 h-full" />
+                </div>
+
+                {/* 2x2 Grid of interactive branches */}
+                <div className="grid grid-cols-2 gap-3 relative">
+                    {(Object.keys(missions) as MissionKey[]).map((key) => {
+                        const isSelected = selectedMission === key;
+                        return (
+                            <button
+                                key={key}
+                                onClick={() => setSelectedMission(key)}
+                                className={`p-3 rounded-2xl border text-center transition-all duration-300 cursor-pointer relative flex flex-col items-center justify-center min-h-[70px] ${
+                                    isSelected
+                                        ? "bg-white border-[#C9A84C] shadow-[0_4px_16px_rgba(201,168,76,0.15)] scale-[1.03] z-10"
+                                        : "bg-white/60 border-neutral-200/80 text-[#6B6058] hover:border-[#C9A84C]/30 hover:bg-[#FEFCF8]"
+                                }`}
+                            >
+                                <span className={`text-[10px] font-extrabold uppercase tracking-wide block ${isSelected ? "text-[#1C1815]" : "text-[#9A9088]"}`}>
+                                    {missions[key].title}
+                                </span>
+                                <span className="text-[8px] text-[#6B6058] mt-0.5 font-medium line-clamp-1">
+                                    {missions[key].subtitle}
+                                </span>
+                                {isSelected && (
+                                    <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#C9A84C] rotate-45 rounded-xs" />
+                                )}
+                            </button>
+                        );
+                    })}
+                </div>
+            </div>
+
+            {/* Explanatory Details Box */}
+            <div key={selectedMission} className="relative z-10 bg-white rounded-2xl p-4 border border-[#C9A84C]/20 shadow-xs text-left animate-mission-fade min-h-[145px] flex flex-col justify-between">
+                <div>
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                        <div>
+                            <span className="text-[11px] font-bold text-[#1C1815] block">
+                                Pôle : {missions[selectedMission].title}
+                            </span>
+                            <span className="text-[9px] font-semibold text-[#9A9088] uppercase block leading-tight mt-1">
+                                {missions[selectedMission].subtitle}
+                            </span>
+                        </div>
+                        <div className="text-right">
+                            <span className="text-sm font-extrabold text-[#C9A84C] block leading-none">
+                                {missions[selectedMission].metric}
+                            </span>
+                            <span className="text-[7px] text-[#9A9088] font-bold uppercase tracking-wider block mt-0.5">
+                                Facteur d&apos;impact
+                            </span>
+                        </div>
+                    </div>
+
+                    <p className="text-[10px] text-[#6B6058] leading-relaxed mb-3">
+                        {missions[selectedMission].desc}
+                    </p>
+                </div>
+
+                <div className="pt-2.5 border-t border-neutral-100 flex flex-wrap gap-1.5 items-center justify-between">
+                    <div className="flex flex-wrap gap-1">
+                        {missions[selectedMission].tools.map((t) => (
+                            <span key={t} className="text-[7.5px] font-extrabold uppercase px-1.5 py-0.5 bg-neutral-100 text-[#1C1815] rounded">
+                                {t}
+                            </span>
+                        ))}
+                    </div>
+                    <span className="text-[8px] font-bold text-[#C9A84C]">
+                        {missions[selectedMission].metricLabel}
+                    </span>
+                </div>
+            </div>
+        </div>
+    );
+}
 
 /**
  * Composant client affichant le contenu complet d'une page d'expérience dédiée.
@@ -118,6 +270,16 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                         <span className="text-xs font-bold uppercase tracking-widest">SFTS</span>
                                     </div>
                                 </div>
+                            )}
+                            {experience.slug === "wiame-groupe-controle-de-gestion" && (
+                                <Image
+                                    src="/wiame/Unknown-2.jpg"
+                                    alt="Logo Wiame Groupe"
+                                    width={144}
+                                    height={144}
+                                    sizes="(max-width: 768px) 112px, 144px"
+                                    className="size-28 md:size-36 rounded-[2rem] object-contain border border-neutral-200/80 shadow-xl bg-white p-2 shrink-0"
+                                />
                             )}
                             
                             {/* Titre du projet (si enrichi) ou titre du poste décalé sur la droite */}
@@ -589,11 +751,22 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                               </div>
                                           )}
 
-                                        {/* Documents & Livrables */}
+                                          {/* Bento Box Bilan (Wiame Groupe) */}
+                                          {experience.slug === "wiame-groupe-controle-de-gestion" && (
+                                              <div className="flex flex-col gap-3">
+                                                  <div className="flex items-center gap-2 mb-2 mt-2">
+                                                      <div className="size-2 rounded-full" style={{ background: color }} />
+                                                      <h3 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-[#1C1815]">Outil de Pilotage</h3>
+                                                  </div>
+                                                  <MissionsOrganigrammeWiame />
+                                              </div>
+                                          )}
+
+                                         {/* Documents & Livrables */}
                                         {experience.recommendationLetters && experience.recommendationLetters.length > 0 && (
                                             <div className="flex flex-col gap-3">
                                                 <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9A9088]">
-                                                    {(experience.slug === "ruby-rose-beauty-controle-de-gestion" || experience.slug === "alumni-gea-meaux-tresoriere-fondatrice") ? "Documents & Livrables" : "Recommandations"}
+                                                    {(experience.slug === "ruby-rose-beauty-controle-de-gestion" || experience.slug === "alumni-gea-meaux-tresoriere-fondatrice" || experience.slug === "wiame-groupe-controle-de-gestion") ? "Documents & Livrables" : "Recommandations"}
                                                 </h3>
                                                 {experience.recommendationLetters.map((letter, idx) => {
                                                     const isRuby = experience.slug === "ruby-rose-beauty-controle-de-gestion";
@@ -717,6 +890,51 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                     <h4 className="font-display text-sm font-bold text-[#1C1815]">Teaser & Rétrospective du Projet Alumni</h4>
                                                     <p className="mt-1 text-xs leading-relaxed text-[#6B6058]">Découvrez l&apos;ambiance et la dynamique de la conférence qui a réuni plus de 75 étudiants et professionnels.</p>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    {/* Galerie Photos : Wiame Groupe */}
+                                    {experience.slug === "wiame-groupe-controle-de-gestion" && (
+                                        <div className="mt-20">
+                                            <div className="mb-8 flex items-center gap-3">
+                                                <span className="h-px w-8" style={{ background: color }} />
+                                                <span className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color }}>
+                                                    Galerie Photo : Outils & Structuration
+                                                </span>
+                                            </div>
+
+                                            <div className="grid gap-6 sm:grid-cols-2">
+                                                {[
+                                                    {
+                                                        src: "/wiame/Capture d’écran 2026-06-08 à 02.08.01.png",
+                                                        title: "Structure Analytique & Suivi Budgétaire",
+                                                        desc: "Conception de tableaux de bord automatisés pour le suivi analytique et budgétaire en temps réel des chantiers."
+                                                    }
+                                                ].map((imgItem, idx) => (
+                                                    <div
+                                                        key={idx}
+                                                        className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
+                                                    >
+                                                        <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-100">
+                                                            <Image
+                                                                src={imgItem.src}
+                                                                alt={imgItem.title}
+                                                                fill
+                                                                sizes="(max-width: 640px) 100vw, 50vw"
+                                                                className="object-cover"
+                                                            />
+                                                        </div>
+                                                        <div className="p-5">
+                                                            <h4 className="font-display text-sm font-bold text-[#1C1815]">
+                                                                {imgItem.title}
+                                                            </h4>
+                                                            <p className="mt-1.5 text-xs leading-relaxed text-[#6B6058]">
+                                                                {imgItem.desc}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                     )}
