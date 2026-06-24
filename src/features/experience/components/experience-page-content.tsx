@@ -16,34 +16,34 @@ function MissionsOrganigrammeWiame() {
         strategie: {
             title: "Aide à la Décision",
             subtitle: "Compétence 2 du PN - « Aider à la prise de décision »",
-            desc: "Accompagnement individuel des responsables de services (RH, QSE, Atelier mécanique) pour analyser leurs écarts de budget, avec une posture de partenaire de conseil plutôt que de simple contrôleur.",
-            tools: ["MyReport", "Excel", "ADCI"],
-            metric: "Révision Mars",
-            metricLabel: "menée avec les opérationnels"
+            desc: "La fiabilisation mensuelle des résultats des trois sociétés du groupe. Ma maîtrise des écritures de régularisation (cut-off) et mon travail minutieux de lettrage ont permis de sécuriser l'information financière (comme la détection et l'annulation d'une FNP en doublon), fournissant ainsi à la direction une base exacte pour ses prises de décision.",
+            tools: ["Sage", "Excel", "Cut-off"],
+            metric: "3 sociétés",
+            metricLabel: "fiabilisées mensuellement"
         },
         harmonisation: {
             title: "Parties Prenantes",
             subtitle: "Compétence 3 du PN - « Piloter les relations avec les parties prenantes »",
-            desc: "Dialogue et validation avec le terrain (les responsables d'atelier PM) pour ajuster les tarifs financiers réels de l'ERP ADCI et éviter de facturer des équipements achetés définitivement.",
-            tools: ["Matrice Excel", "ERP ADCI"],
-            metric: "Dialogue Terrain",
-            metricLabel: "pour une facturation interne juste"
+            desc: "L'accompagnement personnalisé des différents responsables de services transverses (RH, Marketing, QSE, Entretien des installations) lors de la révision budgétaire de mi-exercice, ainsi que le conseil apporté aux responsables du parc matériel pour l'élaboration du budget prévisionnel des heures engins.",
+            tools: ["Excel", "MyReport", "Entretiens"],
+            metric: "Révision Mars",
+            metricLabel: "accompagnement des opérationnels"
         },
         fiabilisation: {
             title: "Outils de Contrôle",
             subtitle: "Compétence 4 du PN - « Concevoir des outils de contrôle de gestion »",
-            desc: "Détection d'une rupture de proportionnalité dans les tarifs horaires/journaliers de l'ERP ADCI, création d'une matrice Excel (RECHERCHEV + test booléen) et import de corrections en masse.",
-            tools: ["Excel Avancé", "RECHERCHEV", "Clé primaire"],
-            metric: "1 ERP (ADCI)",
-            metricLabel: "assaini et fiabilisé à 100%"
+            desc: "J'ai conçu et restructuré plusieurs outils majeurs. J'ai d'abord participé à l'amélioration d'un tableau de bord automatisé sur Excel pour remonter les indicateurs de performance de notre logiciel Wiame Solutions. J'ai également conçu mes propres tableaux de suivi pas à pas en exploitant MyReport, un logiciel de reporting très pointu. Enfin, après avoir entièrement restructuré l'architecture analytique de la filiale industrielle Probinord dans l'ERP ADCI (en remplaçant les \"faux chantiers\" par des codes analytique), je retravaille actuellement l'harmonisation des plans analytiques de Wiame VRD et Wiame AXE afin d'uniformiser définitivement la logique analytique à l'échelle du groupe entier.",
+            tools: ["Excel Avancé", "MyReport", "ERP ADCI"],
+            metric: "3 filiales",
+            metricLabel: "harmonisation analytique"
         },
         outils: {
-            title: "Outils de Pilotage",
-            subtitle: "Compétence 5 du PN - « Concevoir des outils de contrôle de gestion »",
-            desc: "Garantie de la fiabilité de la donnée financière mensuelle (Cut-off, FNP, CCA) sur Sage en se connectant aux réalités physiques du terrain (ex: tonne d'enrobés livrée non facturée).",
-            tools: ["Sage", "Excel", "Piste d'audit"],
-            metric: "Cut-off & PCG",
-            metricLabel: "mensuel sécurisé et harmonisé"
+            title: "Amélioration Continue",
+            subtitle: "Compétence 5 du PN - « Mettre en œuvre des leviers d'amélioration continue »",
+            desc: "J'ai conçu et restructuré plusieurs outils majeurs. J'ai d'abord participé à l'amélioration d'un tableau de bord automatisé sur Excel pour remonter les indicateurs de performance de notre logiciel Wiame Solutions. J'ai également conçu mes propres tableaux de suivi pas à pas en exploitant MyReport, un logiciel de reporting très pointu. Enfin, après avoir entièrement restructuré l'architecture analytique de la filiale industrielle Probinord dans l'ERP ADCI (en remplaçant les \"faux chantiers\" par des codes analytique), je retravaille actuellement l'harmonisation des plans analytiques de Wiame VRD et Wiame AXE afin d'uniformiser définitivement la logique analytique à l'échelle du groupe entier.",
+            tools: ["Excel", "MyReport", "ADCI"],
+            metric: "Amélioration",
+            metricLabel: "performance du groupe"
         }
     };
 
@@ -890,51 +890,6 @@ export function ExperiencePageContent({ experience }: { experience: Experience }
                                                     <h4 className="font-display text-sm font-bold text-[#1C1815]">Teaser & Rétrospective du Projet Alumni</h4>
                                                     <p className="mt-1 text-xs leading-relaxed text-[#6B6058]">Découvrez l&apos;ambiance et la dynamique de la conférence qui a réuni plus de 75 étudiants et professionnels.</p>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    )}
-
-                                    {/* Galerie Photos : Wiame Groupe */}
-                                    {experience.slug === "wiame-groupe-controle-de-gestion" && (
-                                        <div className="mt-20">
-                                            <div className="mb-8 flex items-center gap-3">
-                                                <span className="h-px w-8" style={{ background: color }} />
-                                                <span className="text-xs font-semibold uppercase tracking-[0.25em]" style={{ color }}>
-                                                    Galerie Photo : Outils & Structuration
-                                                </span>
-                                            </div>
-
-                                            <div className="grid gap-6 sm:grid-cols-2">
-                                                {[
-                                                    {
-                                                        src: "/wiame/Capture d’écran 2026-06-08 à 02.08.01.png",
-                                                        title: "Structure Analytique & Suivi Budgétaire",
-                                                        desc: "Conception de tableaux de bord automatisés pour le suivi analytique et budgétaire en temps réel des chantiers."
-                                                    }
-                                                ].map((imgItem, idx) => (
-                                                    <div
-                                                        key={idx}
-                                                        className="overflow-hidden rounded-[20px] border border-neutral-200/50 bg-[#FEFCF8] shadow-sm"
-                                                    >
-                                                        <div className="relative aspect-4/3 w-full overflow-hidden bg-neutral-100">
-                                                            <Image
-                                                                src={imgItem.src}
-                                                                alt={imgItem.title}
-                                                                fill
-                                                                sizes="(max-width: 640px) 100vw, 50vw"
-                                                                className="object-cover"
-                                                            />
-                                                        </div>
-                                                        <div className="p-5">
-                                                            <h4 className="font-display text-sm font-bold text-[#1C1815]">
-                                                                {imgItem.title}
-                                                            </h4>
-                                                            <p className="mt-1.5 text-xs leading-relaxed text-[#6B6058]">
-                                                                {imgItem.desc}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                ))}
                                             </div>
                                         </div>
                                     )}
