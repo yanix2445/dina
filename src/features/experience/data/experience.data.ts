@@ -11,8 +11,8 @@ export const experiences: Experience[] = [
             "• Élaboration de procédures internes pour structurer les méthodes de travail\n• Création et pilotage de tableaux de bord pour le suivi de l\u2019activité\n• Consolidation de données financières et analyse mensuelle des résultats\n• Participation aux clôtures mensuelles et saisie comptable des provisions\n• Calcul des prix de revient et optimisation des processus existants\n• Analyse des écarts pour l\u2019aide à la décision de la direction\n• Contribution à la révision budgétaire et analyse des prévisions\n• Revue des immobilisations pour garantir la conformité du registre",
 
         recommendationLetters: [
-            { label: "Rapport de Stage (PDF)", href: "/wiame/rapport-stage-dina-wiame.pdf" },
-            { label: "Soutenance de Stage (PPTX)", href: "/wiame/presentation-rapport-stage-wiame.pptx" },
+            { label: "Rapport de Stage (PDF)", href: "/wiame/DinaRiani_CG2P3_WiameVRD.pdf" },
+            { label: "Soutenance de Stage (PPTX)", href: "/wiame/Oral de stage CG2P 3 WVRD.pptx" },
         ],
 
         // ── Contenu enrichi pour la page dédiée ──
