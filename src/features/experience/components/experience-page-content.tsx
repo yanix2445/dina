@@ -40,7 +40,7 @@ function MissionsOrganigrammeWiame() {
         outils: {
             title: "Amélioration Continue",
             subtitle: "Compétence 5 du PN - « Mettre en œuvre des leviers d'amélioration continue »",
-            desc: "J'ai conçu et restructuré plusieurs outils majeurs. J'ai d'abord participé à l'amélioration d'un tableau de bord automatisé sur Excel pour remonter les indicateurs de performance de notre logiciel Wiame Solutions. J'ai également conçu mes propres tableaux de suivi pas à pas en exploitant MyReport, un logiciel de reporting très pointu. Enfin, après avoir entièrement restructuré l'architecture analytique de la filiale industrielle Probinord dans l'ERP ADCI (en remplaçant les \"faux chantiers\" par des codes analytique), je retravaille actuellement l'harmonisation des plans analytiques de Wiame VRD et Wiame AXE afin d'uniformiser définitivement la logique analytique à l'échelle du groupe entier.",
+            desc: "J'ai conduit deux chantiers majeurs d'amélioration. Premièrement, j'ai mené un projet visant à créer un Plan de Comptes Général (PCG) unique et standardisé pour les trois entités du groupe (Wiame VRD, Probinord, Wiame AXE). Deuxièmement, j'ai restructuré l'outil d'extraction du Grand Livre sur Excel en y intégrant de nouvelles fonctionnalités (TCD instantanés) et, surtout, en y instaurant un encadré de contrôle obligatoire : une \"piste d'audit\" horodatée qui trace la moindre modification manuelle.",
             tools: ["Excel", "MyReport", "ADCI"],
             metric: "Amélioration",
             metricLabel: "performance du groupe"
